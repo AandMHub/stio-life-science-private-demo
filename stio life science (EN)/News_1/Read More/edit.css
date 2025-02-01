@@ -1,0 +1,165 @@
+.img_Read{
+    position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 350px;
+  width: 100%;
+  max-width: 80%;
+}
+
+.h2_tit{
+    position: relative;
+    left: 11%;
+    margin-top: 687.92px;
+    font-size: 22px;
+    color: #161922;
+}
+.h3_tit{
+    position: relative;
+    left: 11%;
+    font-size: 22px;
+    color: #161922;
+}
+
+.text_read p {
+    color: #878585;
+    position: relative;
+    left: 11%;
+    font-size: 15px;
+}
+
+.text_read hr{
+    width: 1133px;
+  color: white;
+  margin-top: 28px;
+}
+
+    
+
+@media screen and (max-width: 1288px) {
+    .text_read {
+        margin-left: -30px;
+    }
+  }
+
+
+@media screen and (max-width: 1240px) {
+    .text_read {
+        margin-left: -66px;
+    }
+  }
+
+
+@media screen and (max-width: 1208px) {
+    .text_read p {
+        font-size: 13px;
+    }
+  }
+
+
+@media screen and (max-width: 1046px) {
+    .text_read p {
+        font-size: 12px;
+    }
+  }
+
+
+@media screen and (max-width: 1046px) {
+    .text_read p {
+        width: 508px;
+    }
+  }
+
+
+@media screen and (max-width: 654px) {
+    .text_read h2 {
+        width: 450px;
+    }
+  }
+
+  
+
+@media screen and (max-width: 528px) {
+    .text_read p {
+        width: 400px;
+    }
+  }
+
+
+@media screen and (max-width: 488px) {
+    .text_read {
+        margin-left: -30px;
+    }
+  }
+
+  
+
+
+  @media screen and (max-width: 464px) {
+    .text_read h3 {
+        width: 300px;
+    }
+  }
+
+  
+
+@media screen and (max-width: 464px) {
+    .text_read p {
+        width: 308px;
+    }
+  }
+
+
+  @media screen and (max-width: 330px) {
+    .text_read h2 {
+        width: 300px;
+        font-size: 18px;
+    }
+  }
+
+
+
+  @media screen and (max-width: 330px) {
+    .text_read h3 {
+        width: 300px;
+        font-size: 18px;
+    }
+  }
+
+  
+
+@media screen and (max-width: 330px) {
+    .text_read p {
+        width: 250px;
+        font-size: 10px;
+    }
+  }
+
+
+@media screen and (max-width: 782px) {
+    .img_Read{
+        top: 201px;
+    }
+  }
+
+
+@media screen and (max-width: 782px) {
+    .text_read{
+        margin-top: -285px;
+    }
+  }
+
+
+
+@media screen and (max-width: 446px) {
+    .text_read{
+        margin-top: -425px;
+    }
+  }
+
+@media screen and (max-width: 446px) {
+    .img_Read{
+        top: 145px;
+    }
+  }
+
