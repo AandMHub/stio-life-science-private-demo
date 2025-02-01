@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+
+
+.img_top{
+    margin-left: -8px;
+    width: 101.2%;
+}
+
+.h2-1{
+    margin-top: -249.08px;
+  margin-bottom: -249.08px;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+}
+
+
+.link1{
+    text-decoration: none;
+    color: white;
+    display: block ruby;
+    text-align: center;
+    margin-top: 262px;
+    margin-left: -74px;
+}
+
+.point{
+    color: white;
+  display: block ruby;
+  text-align: center;
+  margin-top: -40px;
+  margin-left: 8px;
+  font-size: 30px;
+}
+
+
+.link2{
+  text-decoration: none;
+  color: white;
+  display: block ruby;
+  text-align: center;
+  margin-top: -47px;
+  margin-left: 117px;
+    }
+    
+
+    @media screen and (max-width: 748px) {
+        .text {
+            margin-top: 68px;
+        }
+      }
+
+
+      @media screen and (max-width: 556px) {
+        .text {
+            margin-top: 100px;
+        }
+      }
+
+
+      @media screen and (max-width: 436px) {
+        .text {
+            margin-top: 123px;
+        }
+      }
+
+
+      @media screen and (max-width: 344px) {
+        .text {
+            margin-top: 135px;
+        }
+      }
+
+
+      @media screen and (max-width: 320px) {
+        .h2-1 {
+            margin-top: -218.08px;
+            font-size: 25px;
+        }
+      }
+
+
+      @media screen and (max-width: 320px) {
+        .link1 {
+            margin-top: 252px;
+            font-size: 14px;
+        }
+      }
+
+
+      @media screen and (max-width: 1302px) {
+        .img_top {
+            width: 101.3%;
+        }
+      }
+
+
+      @media screen and (max-width: 1192px) {
+        .img_top {
+            width: 101.4%;
+        }
+      }
+
+
+      @media screen and (max-width: 1120px) {
+        .img_top {
+            width: 101.5%;
+        }
+      }
+
+
+      @media screen and (max-width: 1026px) {
+        .img_top {
+            width: 101.6%;
+        }
+      }
+
+
+      @media screen and (max-width: 938px) {
+        .img_top {
+            width: 101.7%;
+        }
+      }
+
+
+
+      @media screen and (max-width: 890px) {
+        .img_top {
+            width: 101.8%;
+        }
+      }
+
+
+      @media screen and (max-width: 824px) {
+        .img_top {
+            width: 102%;
+        }
+      }
+
+
+      @media screen and (max-width: 694) {
+        .img_top {
+            width: 103%;
+        }
+      }
+
+
+
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: #f5efee;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  ul,li {
+    list-style: none;
+    /* Color highlighting when pressed on mobile devices */
+    /*-webkit-tap-highlight-color: transparent;*/
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  /*========== Responsive typography ==========*/
+  @media screen and (min-width: 1024px) {
+    :root {
+      --normal-font-size: 1rem;
+    }
+  }
+
+  /*=============== REUSABLE CSS CLASSES ===============*/
+  .container {
+    max-width: 1025px;
+    margin-inline: 1.5rem;
+  }
+  
+  /*=============== HEADER ===============*/
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+    padding-bottom: 30px;
+  }
+
+  .header .logo{
+    margin-left: -53px;
+    width: 90%;
+    margin-top: 33px;
+  }
+  
+  /*=============== NAV ===============*/
+  .nav {
+    height: 3.5rem;
+  }
+  
+  .nav__menu{
+    margin-right: 60px;
+  }
+
+  .nav__logo, 
+  .nav__burger, 
+  .nav__close {
+    color: #ffffff;
+  }
+  
+  .nav__data {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav__logo {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    font-weight: 600;
+    /* Color highlighting when pressed on mobile devices */
+    /*-webkit-tap-highlight-color: transparent;*/
+  }
+  
+  .nav__logo i {
+    font-weight: initial;
+    font-size: 1.25rem;
+  }
+  
+  .nav__toggle {
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .nav__burger, 
+  .nav__close {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    inset: 0;
+    margin: auto;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: opacity .1s, transform .4s;
+  }
+  
+  .nav__close {
+    opacity: 0;
+  }
+  
+  /* Navigation for mobile devices */
+  @media screen and (max-width: 1118px) {
+    .nav__menu {
+      position: absolute;
+      left: 0;
+      top: 2.5rem;
+      width: 100%;
+      height: calc(100vh - 3.5rem);
+      overflow: auto;
+      pointer-events: none;
+      opacity: 0;
+      transition: top .4s, opacity .3s;
+    }
+    .nav__menu::-webkit-scrollbar {
+      width: 0;
+    }
+    .nav__list {
+      background-color: #3b9358;
+      padding-top: 1rem;
+    }
+    .header .logo{
+      margin-left: 0;
+      width: 130px;
+      margin-top: 35px;
+    }
+  }
+  
+  .nav__link {
+    color: #a19999;
+    font-weight: 600;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color .3s;
+  }
+  
+  .nav__link:hover {
+    background-color: #3b9358;
+  }
+  
+  /* Show menu */
+  .show-menu {
+    opacity: 1;
+    top: 5.5rem;
+    pointer-events: initial;
+  }
+  
+  /* Show icon */
+  .show-icon .nav__burger {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  .show-icon .nav__close {
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+  
+  /*=============== DROPDOWN ===============*/
+  .dropdown__item {
+    cursor: pointer;
+  }
+  
+  .dropdown__arrow {
+    font-size: 1.25rem;
+    font-weight: initial;
+    transition: transform .4s;
+  }
+  
+  .dropdown__link, 
+  .dropdown__sublink {
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+    color: #fff;
+    background-color: #3b9358;
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    font-weight: 600;
+    transition: background-color .3s;
+  }
+  
+  .dropdown__link i, 
+  .dropdown__sublink i {
+    font-size: 1.25rem;
+    font-weight: initial;
+  }
+  
+  .dropdown__link:hover, 
+  .dropdown__sublink:hover {
+    background-color: #2a7242;
+  }
+  
+  .dropdown__menu, 
+  .dropdown__submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease-out;
+  }
+  
+  /* Show dropdown menu & submenu */
+  .dropdown__item:hover .dropdown__menu, 
+  .dropdown__subitem:hover > .dropdown__submenu {
+    max-height: 1000px;
+    transition: max-height .4s ease-in;
+  }
+  
+  /* Rotate dropdown icon */
+  .dropdown__item:hover .dropdown__arrow {
+    transform: rotate(180deg);
+  }
+  
+  /*=============== DROPDOWN SUBMENU ===============*/
+  .dropdown__add {
+    margin-left: auto;
+  }
+  
+  .dropdown__sublink {
+    background-color: #3b9358;
+  }
+  
+  /*=============== BREAKPOINTS ===============*/
+  /* For small devices */
+  @media screen and (max-width: 340px) {
+    .container {
+      margin-inline: 1rem;
+    }
+  
+    .nav__link {
+      padding-inline: 1rem;
+    }
+  }
+  
+  /* For large devices */
+  @media screen and (min-width: 1118px) {
+    .container {
+      margin-inline: auto;
+    }
+  
+    .nav {
+      height: calc(3.5rem + 2rem);
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav__toggle {
+      display: none;
+    }
+    .nav__list {
+      height: 100%;
+      display: flex;
+      column-gap: 2rem;
+    }
+    .nav__link {
+      height: 100%;
+      padding: 0;
+      justify-content: initial;
+      column-gap: .25rem;
+      transition: 0.3s;
+    }
+    .nav__link:hover {
+      background-color: transparent;
+      border-bottom: 4px solid #3b9358;
+    }
+  
+    .dropdown__item, 
+    .dropdown__subitem {
+      position: relative;
+    }
+  
+    .dropdown__menu, 
+    .dropdown__submenu {
+      max-height: initial;
+      overflow: initial;
+      left: 0;
+      top: 6rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s, top .3s;
+    }
+  
+    .dropdown__link, 
+    .dropdown__sublink {
+      padding-inline: 1rem 3.5rem;
+    }
+  
+    .dropdown__subitem .dropdown__link {
+      padding-inline: 1rem;
+    }
+  
+    .dropdown__submenu {
+      position: absolute;
+      left: 100%;
+      top: .5rem;
+    }
+  
+    /* Show dropdown menu */
+    .dropdown__item:hover .dropdown__menu {
+      opacity: 1;
+      top: 5.5rem;
+      pointer-events: initial;
+      transition: top .3s;
+    }
+  
+    /* Show dropdown submenu */
+    .dropdown__subitem:hover > .dropdown__submenu {
+      opacity: 1;
+      top: 0;
+      pointer-events: initial;
+      transition: top .3s;
+    }
+  }
+
+
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0efe8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container-us {
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+
+.form-container, .info-container {
+    flex: 1;
+    padding: 20px;
+}
+
+h1{
+    color: green;
+    margin-bottom: 15px;
+}
+
+.head-titel p{
+  color: #484A51;
+  font-family: "Jost", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+h3 {
+    margin-top: 10px;
+    color: #333;
+    margin-bottom: 22px;
+}
+
+.section {
+    margin-bottom: 10px;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.grid input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: -15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.checkbox {
+    margin-top: 10px;
+}
+
+.checkbox p{
+  color: #484A51;
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+.info-container {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    background: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container-us {
+        flex-direction: column;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: #f5efee;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  ul,li {
+    list-style: none;
+    /* Color highlighting when pressed on mobile devices */
+    /*-webkit-tap-highlight-color: transparent;*/
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  /*========== Responsive typography ==========*/
+  @media screen and (min-width: 1024px) {
+    :root {
+      --normal-font-size: 1rem;
+    }
+  }
+
+  /*=============== REUSABLE CSS CLASSES ===============*/
+  .container {
+    max-width: 1025px;
+    margin-inline: 1.5rem;
+  }
+  
+  /*=============== HEADER ===============*/
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+    padding-bottom: 30px;
+  }
+
+  .header .logo{
+    margin-left: -53px;
+    width: 90%;
+    margin-top: 33px;
+  }
+  
+  /*=============== NAV ===============*/
+  .nav {
+    height: 3.5rem;
+  }
+  
+  .nav__menu{
+    margin-right: 60px;
+  }
+
+  .nav__logo, 
+  .nav__burger, 
+  .nav__close {
+    color: #ffffff;
+  }
+  
+  .nav__data {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav__logo {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    font-weight: 600;
+    /* Color highlighting when pressed on mobile devices */
+    /*-webkit-tap-highlight-color: transparent;*/
+  }
+  
+  .nav__logo i {
+    font-weight: initial;
+    font-size: 1.25rem;
+  }
+  
+  .nav__toggle {
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .nav__burger, 
+  .nav__close {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    inset: 0;
+    margin: auto;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: opacity .1s, transform .4s;
+  }
+  
+  .nav__close {
+    opacity: 0;
+  }
+  
+  /* Navigation for mobile devices */
+  @media screen and (max-width: 1118px) {
+    .nav__menu {
+      position: absolute;
+      left: 0;
+      top: 2.5rem;
+      width: 100%;
+      height: calc(100vh - 3.5rem);
+      overflow: auto;
+      pointer-events: none;
+      opacity: 0;
+      transition: top .4s, opacity .3s;
+    }
+    .nav__menu::-webkit-scrollbar {
+      width: 0;
+    }
+    .nav__list {
+      background-color: #3b9358;
+      padding-top: 1rem;
+    }
+    .header .logo{
+      margin-left: 0;
+      width: 130px;
+      margin-top: 35px;
+    }
+  }
+  
+  .nav__link {
+    color: #a19999;
+    font-weight: 600;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color .3s;
+  }
+  
+  .nav__link:hover {
+    background-color: #3b9358;
+  }
+  
+  /* Show menu */
+  .show-menu {
+    opacity: 1;
+    top: 5.5rem;
+    pointer-events: initial;
+  }
+  
+  /* Show icon */
+  .show-icon .nav__burger {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  .show-icon .nav__close {
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+  
+  /*=============== DROPDOWN ===============*/
+  .dropdown__item {
+    cursor: pointer;
+  }
+  
+  .dropdown__arrow {
+    font-size: 1.25rem;
+    font-weight: initial;
+    transition: transform .4s;
+  }
+  
+  .dropdown__link, 
+  .dropdown__sublink {
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+    color: #fff;
+    background-color: #3b9358;
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    font-weight: 600;
+    transition: background-color .3s;
+  }
+  
+  .dropdown__link i, 
+  .dropdown__sublink i {
+    font-size: 1.25rem;
+    font-weight: initial;
+  }
+  
+  .dropdown__link:hover, 
+  .dropdown__sublink:hover {
+    background-color: #2a7242;
+  }
+  
+  .dropdown__menu, 
+  .dropdown__submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease-out;
+  }
+  
+  /* Show dropdown menu & submenu */
+  .dropdown__item:hover .dropdown__menu, 
+  .dropdown__subitem:hover > .dropdown__submenu {
+    max-height: 1000px;
+    transition: max-height .4s ease-in;
+  }
+  
+  /* Rotate dropdown icon */
+  .dropdown__item:hover .dropdown__arrow {
+    transform: rotate(180deg);
+  }
+  
+  /*=============== DROPDOWN SUBMENU ===============*/
+  .dropdown__add {
+    margin-left: auto;
+  }
+  
+  .dropdown__sublink {
+    background-color: #3b9358;
+  }
+  
+  /*=============== BREAKPOINTS ===============*/
+  /* For small devices */
+  @media screen and (max-width: 340px) {
+    .container {
+      margin-inline: 1rem;
+    }
+  
+    .nav__link {
+      padding-inline: 1rem;
+    }
+  }
+  
+  /* For large devices */
+  @media screen and (min-width: 1118px) {
+    .container {
+      margin-inline: auto;
+    }
+  
+    .nav {
+      height: calc(3.5rem + 2rem);
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav__toggle {
+      display: none;
+    }
+    .nav__list {
+      height: 100%;
+      display: flex;
+      column-gap: 2rem;
+    }
+    .nav__link {
+      height: 100%;
+      padding: 0;
+      justify-content: initial;
+      column-gap: .25rem;
+      transition: 0.3s;
+    }
+    .nav__link:hover {
+      background-color: transparent;
+      border-bottom: 4px solid #3b9358;
+    }
+  
+    .dropdown__item, 
+    .dropdown__subitem {
+      position: relative;
+    }
+  
+    .dropdown__menu, 
+    .dropdown__submenu {
+      max-height: initial;
+      overflow: initial;
+      left: 0;
+      top: 6rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s, top .3s;
+    }
+  
+    .dropdown__link, 
+    .dropdown__sublink {
+      padding-inline: 1rem 3.5rem;
+    }
+  
+    .dropdown__subitem .dropdown__link {
+      padding-inline: 1rem;
+    }
+  
+    .dropdown__submenu {
+      position: absolute;
+      left: 100%;
+      top: .5rem;
+    }
+  
+    /* Show dropdown menu */
+    .dropdown__item:hover .dropdown__menu {
+      opacity: 1;
+      top: 5.5rem;
+      pointer-events: initial;
+      transition: top .3s;
+    }
+  
+    /* Show dropdown submenu */
+    .dropdown__subitem:hover > .dropdown__submenu {
+      opacity: 1;
+      top: 0;
+      pointer-events: initial;
+      transition: top .3s;
+    }
+  }
+  
+
+.footer {
+  background-color: #3b9358;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section p{
+  margin-bottom: 30px;
+}
+
+.footer-section ul li {
+  margin-bottom: 30px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover{
+  color: #157736;
+}
+
+.footer .active{
+  color: #157736;
+
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 20px auto 0;
+  padding-top: 20px;
+  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-section {
+      width: 100%;
+      text-align: center;
+  }
+
+  .footer-bottom {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+  }
+}
+
+.footer svg{
+  width: 20px;
+  color: #fff;
+  padding-right: 10px;
+}
+.footer .social-links a {
+display: inline-block;
+height: 33px;
+width: 33px;
+background-color: rgba(255,255,255,0.2);
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all 0.5s ease;
+}
+
+@media (max-width: 1091px) {
+.nav__link{
+  color: #fff;
+}
+}
+
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 30px;
+  color: #3b9358;
+}
+
+.floating-button img {
+  width: 40px;
+  height: 40px;
+}
+
+/* القائمة التي تظهر بعد الضغط */
+.contact-options {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.option, .close-button {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 30px;
+  color: #3b9358;
+}
+
+.option img, .close-button img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-options.active {
+  display: flex;
+}
+
+    </style>
+
+</head>
+<body>
+
+
+
+  <header class="header">
+    <nav class="nav container">
+        <div class="nav__data">
+            <img src="imgs/logo.png" alt="" class="logo">
+
+            <div class="nav__toggle" id="nav-toggle">
+                MENU
+            </div>
+        </div>
+
+        <li class="dropdown__item" style="color: #a19999;">
+            <div class="nav__link" style="color: #a19999;">
+                Français <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+
+            <ul class="dropdown__menu">
+                <li>
+                    <a href="../stio life science (AR)/contact-us.html" class="dropdown__link">
+                        Arabic
+                    </a>
+                </li>
+                <li>
+                    <a href="../stio life science (EN)/contact-us.html" class="dropdown__link">
+                      English
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <!--=============== NAV MENU =============== -->
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">Accueil</a></li>
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        À propos de nous <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu" style="  margin-right: -66px;">
+                        <li>
+                            <a href="about/project_1/Board.html" class="dropdown__link">
+                                <i class="ri-user-line"></i> Conseil
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about/project_2/Who We Are.html" class="dropdown__link">
+                                <i class="ri-user-line"></i> Qui nous sommes؟
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about/project_3/Mission.html" class="dropdown__link">
+                                <i class="ri-user-line"></i> Mission
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about/project_4/Vision.html" class="dropdown__link">
+                                <i class="ri-user-line"></i> Vision
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about/project_5/Values.html" class="dropdown__link">
+                                <i class="ri-lock-line"></i> Valeurs
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about/project_6/Partners.html" class="dropdown__link">
+                                <i class="ri-message-3-line"></i> Partenaires
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Nos Produits <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu" style="  margin-right: -32px;">
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown__subitem">
+                            <div class="dropdown__link">
+                                <i class="ri-bar-chart-line"></i> Classe thérapeutique <i class="ri-add-line dropdown__add"></i>
+                            </div>
+
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="Our products/Our products1/Our prodact1.html" class="dropdown__sublink">
+                                        <i class="ri-file-list-line"></i> Doxapram Hydrochloride
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Our products/Our products2/Our prodact1.html" class="dropdown__sublink">
+                                        <i class="ri-file-list-line"></i> Dexmedetomidine Hydrochloride
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Our products/Our products3/Our prodact1.html" class="dropdown__sublink">
+                                        <i class="ri-file-list-line"></i> Chlorhydrate de lévobupivacaïne
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Our products/Our products4/Our prodact1.html" class="dropdown__sublink">
+                                        <i class="ri-cash-line"></i> Ropivacaine Hydrochloride
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Our products/Our products5/Our prodact1.html" class="dropdown__sublink">
+                                        <i class="ri-refund-2-line"></i> Chlorhydrate de tirofiban monohydraté
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav__link"></a></li>
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Pipeline <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu" style="  margin-right: -81px;">
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown__subitem">
+                            <div class="dropdown__link">
+                                <i class="ri-bar-chart-line"></i> Classe thérapeutique <i class="ri-add-line dropdown__add"></i>
+                            </div>
+
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="Product1/Product1.html" class="dropdown__sublink">
+                                        <i class="ri-file-list-line"></i> Produit 1
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Product2/Product2.html" class="dropdown__sublink">
+                                        <i class="ri-file-list-line"></i> Produit 2
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="career.html" class="nav__link">Carrière</a></li>
+                <li><a href="News_1/News.html" class="nav__link">Actualités</a></li>
+                <li><a href="#" class="nav__link" style="  margin-right: -91px;">Contactez-nous</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<div class="container-news" style="margin-top: 100px;">
+  <img class="img_top" src="imgs/background.png" alt="">
+  <div class="text">
+      <h2 class="h2-1">Contactez-nous</h2>
+      <a class="link1" href="">Accueil </a>
+      <h3 class="point">.</h3>
+      <a class="link2" href="">Contactez-nous </a>
+  </div>
+</div>
+
+
+
+<div class="container-us">
+  <!-- قسم النموذج -->
+  <div class="form-container">
+      <div class="head-titel">
+          <h1>Parlons-en !</h1>
+          <p>Avez-vous des questions à propos de l'un des éléments suivants :<br>
+              Assurez-vous de remplir tous les champs avec un astérisque *</p>
+      </div>
+      <form>
+          <div class="section">
+              <label>Veuillez sélectionner parmi les éléments suivants :*</label>
+              <div class="radio-group">
+                  <label><input type="radio" name="title" value="Mr"> M.</label>
+                  <label><input type="radio" name="title" value="Mrs"> Mme</label>
+                  <label><input type="radio" name="title" value="Ms"> Mlle</label>
+                  <label><input type="radio" name="title" value="Dr"> Dr</label>
+              </div>
+          </div>
+
+          <div class="section">
+              <label>Votre demande :</label>
+              <div class="radio-group">
+                  <label><input type="radio" name="inquiry" value="Our Products"> Nos produits</label>
+                  <label><input type="radio" name="inquiry" value="Social Media"> Médias sociaux</label>
+                  <label><input type="radio" name="inquiry" value="Request for order"> Demande de commande</label>
+                  <label><input type="radio" name="inquiry" value="Distribution channels"> Canaux de distribution</label>
+                  <label><input type="radio" name="inquiry" value="Medical Information"> Informations médicales</label>
+                  <label><input type="radio" name="inquiry" value="Others"> Autres</label>
+              </div>
+          </div>
+
+          <div class="grid">
+              <input type="text" placeholder="Nom complet *" required>
+              <input type="text" placeholder="Entreprise/Hôpital *" required>
+              <input type="text" placeholder="Profession">
+              <input type="text" placeholder="Pays">
+              <input type="text" placeholder="Code postal/Ville">
+              <input type="text" placeholder="Nom de rue/Numéro">
+              <input type="tel" placeholder="Téléphone *" required>
+              <input type="email" placeholder="E-mail *" required>
+          </div>
+
+          <label class="checkbox">
+              <p>J'ai lu la politique de protection des données et j'accepte le traitement de mes données personnelles conformément à la politique de protection des données. Je peux annuler cette approbation à tout moment. En cochant cette case, vous consentez à ce que nous / nos agences vous contactent à l'avenir. La protection des données personnelles de nos clients est très importante pour nous et nous la prenons très au sérieux. Vos données personnelles sont soumises à la protection des données et ne seront collectées et stockées que pour des raisons de contact.</p>
+              <input type="checkbox" required> J'accepte la politique de protection des données
+          </label>
+
+          <button type="submit">Soumettre</button>
+      </form>
+  </div>
+
+  <!-- قسم المعلومات -->
+  <div class="info-container">
+      <h3>Notre emplacement</h3>
+      <p>33 Nazih Khalifa, Héliopolis, Le Caire, Égypte</p>
+
+      <h3>Contact rapide</h3>
+      <p>Email : info@stollifescience.com</p>
+
+      <h3>Numéro de téléphone</h3>
+      <p>+02 24500837</p>
+
+      <h3>Suivez-nous</h3>
+      <div class="social-icons">
+          <a href="../stio life science/Our products/Our products4/Our prodact1.html"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <div class="map-container">
+          <iframe
+              src="https://www.google.com/maps?q=33+Nazih+Khalifa,+Heliopolis,+Cairo,+Egypt&output=embed"
+              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+      </div>
+  </div>
+</div>
+
+
+
+
+<footer class="footer">
+  <div class="footer-top">
+      <div class="footer-section">
+          <img src="imgs/logo-footer.png" alt="" style="width: 120px;"><br>
+          <p>Nous planifions pour un avenir meilleur</p>
+          <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+      </div>
+      <div class="footer-section">
+          <h3>Liens utiles</h3>
+          <ul>
+            <li><a href="../stio life science/index.html" >Accueil</a></li>
+            <li><a href="../stio life science/career.html" >Carrière</a></li>
+            <li><a href="../stio life science/News_1/News.html">Actualités</a></li>
+            <li><a href="../stio life science/contact-us.html" class="active">Contactez-nous</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <h3>STIO Life Science</h3>
+          <div style="display: flex;">
+          <span class="elementor-icon-list-icon">
+          <svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker-alt" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>									</span>
+          <p>33 Nazih Khalifa, Héliopolis, Le Caire, Égypte</p><br>
+      </div>
+      <div style="display: flex;">
+          <span class="elementor-icon-list-icon">
+              <i aria-hidden="true" class="icon icon-phone-handset"></i>									</span>
+          <p>+ 02 24500837</p><br>
+      </div>
+      <div style="display: flex;">
+          <span class="elementor-icon-list-icon">
+              <i aria-hidden="true" class="icon icon-phone-handset"></i>									</span>
+          <p>info@stiolifescience.com</p><br>
+      </div>
+      </div>
+      <div class="footer-section">
+          <h3>Abonnez-vous maintenant</h3>
+          <p>
+              Ne manquez pas nos futures mises à jour ! Abonnez-vous dès aujourd'hui !
+              </p>
+          <form class="subscribe-form">
+              <input type="email" placeholder="Votre email ici" required>
+          </form>
+      </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Tous droits réservés. Développé par <a href="https://web.whatsapp.com/send?phone=+201271109594&text=">A&M</a></p>
+  </div>
+</footer>
+
+
+
+
+<div class="floating-button" id="mainButton">
+  <i class="fa-solid fa-message"></i>
+</div>
+
+
+<div class="contact-options" id="contactOptions">
+  <div class="option">
+     <a href="tel:+2024500837"><i style="color: #fff;background-color: #3b9358;padding: 17px;border-radius: 40px;" class="fa-solid fa-phone"></i></a>
+  </div>
+  <div class="option">
+     <a href="https://web.whatsapp.com/send?phone=201005139531&text="><i style="color: #fff;background-color: #3b9358;padding: 17px;border-radius: 40px;" class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  <div class="close-button" id="closeButton">
+     <i class="fa-solid fa-xmark"></i>
+  </div>
+</div>
+
+    <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Page Loaded Successfully!");
+});
+
+/*=============== SHOW MENU ===============*/
+const showMenu = (toggleId, navId) =>{
+    const toggle = document.getElementById(toggleId),
+          nav = document.getElementById(navId)
+ 
+    toggle.addEventListener('click', () =>{
+        // Add show-menu class to nav menu
+        nav.classList.toggle('show-menu')
+ 
+        // Add show-icon to show and hide the menu icon
+        toggle.classList.toggle('show-icon')
+    })
+ }
+ 
+ showMenu('nav-toggle','nav-menu')
+
+
+
+ document.addEventListener("DOMContentLoaded", function () {
+    const mainButton = document.getElementById("mainButton");
+    const contactOptions = document.getElementById("contactOptions");
+    const closeButton = document.getElementById("closeButton");
+
+    mainButton.addEventListener("click", function () {
+        contactOptions.classList.add("active");
+        mainButton.style.display = "none"; // إخفاء الزر الأصلي
+    });
+
+    closeButton.addEventListener("click", function () {
+        contactOptions.classList.remove("active");
+        mainButton.style.display = "flex"; // إعادة إظهار الزر
+    });
+});
+
+
+
+
+
+    </script>
+
+</body>
+</html>
