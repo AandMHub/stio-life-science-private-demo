@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Doctor with 3 Years of exp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Reset Styles */
+
+
+/* Container */
+.container-info {
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 125px;
+}
+
+.container-info h1 {
+    font-size: 24px;
+    color: #222;
+}
+
+.container-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.container-info strong {
+    color: #000;
+}
+
+/* Form Styling */
+.form-container {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-info h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.container-info form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-info label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container-info input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container-info textarea {
+    resize: none;
+}
+
+.container-info small {
+    color: #777;
+}
+
+.container-info .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container-info .checkbox input {
+    margin-right: 10px;
+}
+
+.container-info button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.container-info button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container-info {
+        padding: 15px;
+    }
+
+    .container-info h1 {
+        font-size: 20px;
+    }
+
+    .container-info h2 {
+        font-size: 18px;
+    }
+
+    .container-info button {
+        font-size: 14px;
+    }
+}
+
+
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: #f5efee;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  ul,li {
+    list-style: none;
+    /* Color highlighting when pressed on mobile devices */
+    /*-webkit-tap-highlight-color: transparent;*/
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  /*========== Responsive typography ==========*/
+  @media screen and (min-width: 1024px) {
+    :root {
+      --normal-font-size: 1rem;
+    }
+  }
+
+  /*=============== REUSABLE CSS CLASSES ===============*/
+  .container {
+    max-width: 1025px;
+    margin-inline: 1.5rem;
+  }
+  
+  /*=============== HEADER ===============*/
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+    padding-bottom: 30px;
+  }
+
+  .header .logo{
+    margin-left: -53px;
+    width: 40%;
+    margin-top: 33px;
+  }
+  
+  /*=============== NAV ===============*/
+  .nav {
+    height: 3.5rem;
+  }
+  
+  .nav__menu{
+    margin-right: 60px;
+  }
+
+  .nav__logo, 
+  .nav__burger, 
+  .nav__close {
+    color: #ffffff;
+  }
+  
+  .nav__data {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav__logo {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    font-weight: 600;
+    /* Color highlighting when pressed on mobile devices */
+    /*-webkit-tap-highlight-color: transparent;*/
+  }
+  
+  .nav__logo i {
+    font-weight: initial;
+    font-size: 1.25rem;
+  }
+  
+  .nav__toggle {
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .nav__burger, 
+  .nav__close {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    inset: 0;
+    margin: auto;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: opacity .1s, transform .4s;
+  }
+  
+  .nav__close {
+    opacity: 0;
+  }
+  
+  /* Navigation for mobile devices */
+  @media screen and (max-width: 1118px) {
+    .nav__menu {
+      position: absolute;
+      left: 0;
+      top: 2.5rem;
+      width: 100%;
+      height: calc(100vh - 3.5rem);
+      overflow: auto;
+      pointer-events: none;
+      opacity: 0;
+      transition: top .4s, opacity .3s;
+    }
+    .nav__menu::-webkit-scrollbar {
+      width: 0;
+    }
+    .nav__list {
+      background-color: #3b9358;
+      padding-top: 1rem;
+    }
+    .header .logo{
+      margin-left: 0;
+      width: 130px;
+      margin-top: 35px;
+    }
+  }
+  
+  .nav__link {
+    color: #a19999;
+    font-weight: 600;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color .3s;
+  }
+  
+  .nav__link:hover {
+    background-color: #3b9358;
+  }
+  
+  /* Show menu */
+  .show-menu {
+    opacity: 1;
+    top: 5.5rem;
+    pointer-events: initial;
+  }
+  
+  /* Show icon */
+  .show-icon .nav__burger {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  .show-icon .nav__close {
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+  
+  /*=============== DROPDOWN ===============*/
+  .dropdown__item {
+    cursor: pointer;
+  }
+  
+  .dropdown__arrow {
+    font-size: 1.25rem;
+    font-weight: initial;
+    transition: transform .4s;
+  }
+  
+  .dropdown__link, 
+  .dropdown__sublink {
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+    color: #fff;
+    background-color: #3b9358;
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    font-weight: 600;
+    transition: background-color .3s;
+  }
+  
+  .dropdown__link i, 
+  .dropdown__sublink i {
+    font-size: 1.25rem;
+    font-weight: initial;
+  }
+  
+  .dropdown__link:hover, 
+  .dropdown__sublink:hover {
+    background-color: #2a7242;
+  }
+  
+  .dropdown__menu, 
+  .dropdown__submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease-out;
+  }
+  
+  /* Show dropdown menu & submenu */
+  .dropdown__item:hover .dropdown__menu, 
+  .dropdown__subitem:hover > .dropdown__submenu {
+    max-height: 1000px;
+    transition: max-height .4s ease-in;
+  }
+  
+  /* Rotate dropdown icon */
+  .dropdown__item:hover .dropdown__arrow {
+    transform: rotate(180deg);
+  }
+  
+  /*=============== DROPDOWN SUBMENU ===============*/
+  .dropdown__add {
+    margin-left: auto;
+  }
+  
+  .dropdown__sublink {
+    background-color: #3b9358;
+  }
+  
+  /*=============== BREAKPOINTS ===============*/
+  /* For small devices */
+  @media screen and (max-width: 340px) {
+    .container {
+      margin-inline: 1rem;
+    }
+  
+    .nav__link {
+      padding-inline: 1rem;
+    }
+  }
+  
+  /* For large devices */
+  @media screen and (min-width: 1118px) {
+    .container {
+      margin-inline: auto;
+    }
+  
+    .nav {
+      height: calc(3.5rem + 2rem);
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav__toggle {
+      display: none;
+    }
+    .nav__list {
+      height: 100%;
+      display: flex;
+      column-gap: 2rem;
+    }
+    .nav__link {
+      height: 100%;
+      padding: 0;
+      justify-content: initial;
+      column-gap: .25rem;
+      transition: 0.3s;
+    }
+    .nav__link:hover {
+      background-color: transparent;
+      border-bottom: 4px solid #3b9358;
+    }
+  
+    .dropdown__item, 
+    .dropdown__subitem {
+      position: relative;
+    }
+  
+    .dropdown__menu, 
+    .dropdown__submenu {
+      max-height: initial;
+      overflow: initial;
+      left: 0;
+      top: 6rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s, top .3s;
+    }
+  
+    .dropdown__link, 
+    .dropdown__sublink {
+      padding-inline: 1rem 3.5rem;
+    }
+  
+    .dropdown__subitem .dropdown__link {
+      padding-inline: 1rem;
+    }
+  
+    .dropdown__submenu {
+      position: absolute;
+      left: 100%;
+      top: .5rem;
+    }
+  
+    /* Show dropdown menu */
+    .dropdown__item:hover .dropdown__menu {
+      opacity: 1;
+      top: 5.5rem;
+      pointer-events: initial;
+      transition: top .3s;
+    }
+  
+    /* Show dropdown submenu */
+    .dropdown__subitem:hover > .dropdown__submenu {
+      opacity: 1;
+      top: 0;
+      pointer-events: initial;
+      transition: top .3s;
+    }
+  }
+
+.container-search {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+/* شريط البحث والأزرار */
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.container-search .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.container-search .dropdown-button {
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.container-search .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.container-search .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.container-search .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.container-search .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.job-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; 
+}
+
+.job-card {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.job-card h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.job-card p {
+    margin: 0;
+}
+
+.job-card .more-details {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* التصميم المتجاوب */
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-input, .dropdown-button {
+        width: 100%;
+    }
+
+    .job-details {
+        max-width: 90%; /* زيادة العرض في الشاشات الصغيرة */
+    }
+
+    .job-card h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .job-details {
+        max-width: 100%; /* العرض الكامل في الشاشات الصغيرة جدًا */
+    }
+
+    .job-card h2 {
+        font-size: 1rem;
+    }
+
+    .job-card p {
+        font-size: 0.9rem;
+    }
+}
+
+
+.footer {
+  background-color: #3b9358;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section p{
+  margin-bottom: 30px;
+}
+
+.footer-section ul li {
+  margin-bottom: 30px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover{
+  color: #157736;
+}
+
+.footer .active{
+  color: #157736;
+
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 20px auto 0;
+  padding-top: 20px;
+  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-section {
+      width: 100%;
+      text-align: center;
+  }
+
+  .footer-bottom {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+  }
+}
+
+.footer svg{
+  width: 20px;
+  color: #fff;
+  padding-right: 10px;
+}
+.footer .social-links a {
+display: inline-block;
+height: 33px;
+width: 33px;
+background-color: rgba(255,255,255,0.2);
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all 0.5s ease;
+}
+
+@media (max-width: 1091px) {
+.nav__link{
+  color: #fff;
+}
+}
+
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 30px;
+  color: #3b9358;
+}
+
+.floating-button img {
+  width: 40px;
+  height: 40px;
+}
+
+/* القائمة التي تظهر بعد الضغط */
+.contact-options {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.option, .close-button {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 30px;
+  color: #3b9358;
+}
+
+.option img, .close-button img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-options.active {
+  display: flex;
+}
+
+    </style>
+</head>
+<body>
+
+
+
+  <header class="header">
+    <nav class="nav container">
+        <div class="nav__data">
+            <img src="imgs/logo.png" alt="" class="logo">
+            <div class="nav__toggle" id="nav-toggle">
+                القائمة
+            </div>
+        </div>
+        <li class="dropdown__item" style="color: #a19999;">
+            <div class="nav__link" style="color: #a19999;">
+              Arabic <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+            <ul class="dropdown__menu">
+                <li>
+                    <a href="../stio life science (EN)/career-info.html" class="dropdown__link">
+                      English
+                    </a>
+                </li>
+                <li>
+                    <a href="../Stio life science (FR)/career-info.html" class="dropdown__link">
+                      French
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">الرئيسية</a></li>
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        من نحن <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+                    <ul class="dropdown__menu" style="  margin-right: -66px;">
+                        <li>
+                            <a href="about/project_1/Board.html" class="dropdown__link">
+                                <i class="ri-user-line"></i> مجلس الإدارة
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about/project_2/Who We Are.html" class="dropdown__link">
+                                <i class="ri-user-line"></i> من نحن
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about/project_3/Mission.html" class="dropdown__link">
+                                <i class="ri-user-line"></i> رسالتنا
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about/project_4/Vision.html" class="dropdown__link">
+                                <i class="ri-user-line"></i> رؤيتنا
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about/project_5/Values.html" class="dropdown__link">
+                                <i class="ri-lock-line"></i> قيمنا
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about/project_6/Partners.html" class="dropdown__link">
+                                <i class="ri-message-3-line"></i> شركاؤنا
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav__link">أخبار</a></li>
+                <li><a href="contact-us.html" class="nav__link" style="  margin-right: -91px;">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="container-info">
+    <h1>طبيب أقدم بخبرة 3 سنوات</h1>
+    <p><strong>فئة الوظيفة:</strong> طبيب</p>
+    <p><strong>نوع الوظيفة:</strong> دوام كامل</p>
+    <p><strong>موقع الوظيفة:</strong> القاهرة</p>
+    <div class="form-container">
+        <h2>التقديم على هذه الوظيفة</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <label for="fullname">الاسم الكامل *</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <label for="email">البريد الإلكتروني *</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">رقم الهاتف *</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="coverletter">خطاب التغطية *</label>
+            <textarea id="coverletter" name="coverletter" rows="5" required></textarea>
+            <label for="resume">رفع السيرة الذاتية *</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            <small>الأنواع المسموح بها: pdf, doc, docx</small>
+            <div class="checkbox">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">باستخدام هذا النموذج، فإنك توافق على تخزين ومعالجة بياناتك بواسطة هذا الموقع. *</label>
+            </div>
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-section">
+            <img src="imgs/logo-footer.png" alt="" style="width: 120px;"><br>
+            <p>نخطط لغدٍ أفضل</p>
+        </div>
+        <div class="footer-section">
+            <h3>روابط مفيدة</h3>
+            <ul>
+                <li><a href="#" class="active">الرئيسية</a></li>
+                <li><a href="#">وظائف</a></li>
+                <li><a href="#">أخبار</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>STIO علوم الحياة</h3>
+            <p>33 نزيه خليفة، مصر الجديدة، القاهرة، مصر</p>
+            <p>+ 02 24500837</p>
+            <p>info@stiolifescience.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>اشترك الآن</h3>
+            <p>لا تفوّت تحديثاتنا المستقبلية! اشترك اليوم!</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="بريدك الإلكتروني هنا" required>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 جميع الحقوق محفوظة. تم التطوير بواسطة <a href="">A&M</a></p>
+    </div>
+</footer>
+
+<div class="floating-button" id="mainButton">
+  <i class="fa-solid fa-message"></i>
+</div>
+
+<div class="contact-options" id="contactOptions">
+  <div class="option">
+     <i class="fa-solid fa-phone"></i>
+  </div>
+  <div class="option">
+     <i class="fa-brands fa-whatsapp"></i>
+  </div>
+  <div class="close-button" id="closeButton">
+     <i class="fa-solid fa-xmark"></i>
+  </div>
+</div>
+
+
+    <script>
+        // script.js
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+        const button = dropdown.querySelector('.dropdown-button');
+        const content = dropdown.querySelector('.dropdown-content');
+
+        button.addEventListener('click', function() {
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // إغلاق القائمة عند النقر خارجها
+        document.addEventListener('click', function(event) {
+            if (!dropdown.contains(event.target)) {
+                content.style.display = 'none';
+            }
+        });
+    });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Page Loaded Successfully!");
+});
+
+/*=============== SHOW MENU ===============*/
+const showMenu = (toggleId, navId) =>{
+    const toggle = document.getElementById(toggleId),
+          nav = document.getElementById(navId)
+ 
+    toggle.addEventListener('click', () =>{
+        // Add show-menu class to nav menu
+        nav.classList.toggle('show-menu')
+ 
+        // Add show-icon to show and hide the menu icon
+        toggle.classList.toggle('show-icon')
+    })
+ }
+ 
+ showMenu('nav-toggle','nav-menu')
+
+
+
+ document.addEventListener("DOMContentLoaded", function () {
+    const mainButton = document.getElementById("mainButton");
+    const contactOptions = document.getElementById("contactOptions");
+    const closeButton = document.getElementById("closeButton");
+
+    mainButton.addEventListener("click", function () {
+        contactOptions.classList.add("active");
+        mainButton.style.display = "none"; // إخفاء الزر الأصلي
+    });
+
+    closeButton.addEventListener("click", function () {
+        contactOptions.classList.remove("active");
+        mainButton.style.display = "flex"; // إعادة إظهار الزر
+    });
+});
+
+    </script>
+
+</body>
+</html>
