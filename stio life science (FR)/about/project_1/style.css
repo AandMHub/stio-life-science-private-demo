@@ -694,3 +694,7 @@ transition: all 0.5s ease;
 .contact-options.active {
   display: flex;
 }
+
+    .header .logo {
+      width: 160%;
+    }
