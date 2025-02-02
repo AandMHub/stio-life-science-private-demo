@@ -773,4 +773,8 @@ body{
   .contact-options.active {
     display: flex;
   }
+
+    .header .logo {
+      width: 160%;
+    }
   
