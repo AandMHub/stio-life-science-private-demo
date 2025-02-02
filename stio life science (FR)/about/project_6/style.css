@@ -659,3 +659,12 @@ transition: all 0.5s ease;
     .header .logo {
       width: 160%;
     }
+
+        @media screen and (max-width: 1118px) {
+  .header .logo {
+    margin-left: 0;
+    width: 130px;
+    margin-top: 35px;
+  }
+}
+
