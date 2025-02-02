@@ -25,7 +25,7 @@
     color: white;
   display: block ruby;
   text-align: center;
-  margin-top: -40px;
+  
   margin-left: 8px;
   font-size: 30px;
 }
@@ -37,7 +37,6 @@
     display: block ruby;
     text-align: center;
     margin-left: 90px;
-    margin-top: -34px;
     }
     
 
@@ -693,4 +692,48 @@ transition: all 0.5s ease;
 
 .contact-options.active {
   display: flex;
+}
+
+/* new res */
+
+
+.point{
+  margin-top: -45px;
+}
+
+.link2{
+  margin-top: -30px;
+}
+
+
+.link1{
+  margin-top: 230px;
+}
+
+@media screen and (max-width : 950px) {
+  .text{
+    margin-top: 63px;
+  }
+}
+
+
+@media screen and (max-width : 758px) {
+  .text{
+    margin-top: 105px;
+  }
+}
+
+
+@media screen and (max-width : 606px) {
+  .img_top{
+    height: 300px;
+  }
+}
+
+
+
+@media screen and (max-width : 606px) {
+  .text{
+    margin-top: 90px;
+  }
 }
