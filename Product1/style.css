@@ -773,3 +773,18 @@ transition: all 0.5s ease;
 .contact-options.active {
   display: flex;
 }
+
+
+
+@media screen and (max-width: 468px) {
+  .img_top {
+  height: 300px;
+  }
+}
+
+
+@media screen and (max-width: 468px) {
+  .text {
+    margin-top: 110px;
+  }
+}
