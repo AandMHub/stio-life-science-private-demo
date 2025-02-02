@@ -875,9 +875,3 @@ transition: all 0.5s ease;
 .contact-options.active {
   display: flex;
 }
-@media screen and (min-width: 1118px) {
-  .lng_item {
-    position: relative;
-    top: 60px;
-  }
-}
