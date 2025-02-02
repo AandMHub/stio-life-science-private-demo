@@ -1254,3 +1254,7 @@ transition: all 0.5s ease;
     width: 80%;
   }
 }
+
+        .header .logo {
+      width: 160%;
+    }
