@@ -1,6 +1,7 @@
 .img_top{
     margin-left: -8px;
     width: 101.2%;
+    height: 573px;
 }
 
 .h2-1{
@@ -165,6 +166,8 @@
 
       .all_pragraph p{
         letter-spacing: -.5px;
+        line-height: 2.9;
+  color: #7a7a7a;
       }
 
 
@@ -729,32 +732,6 @@ transition: all 0.5s ease;
 
 
 
-@media screen and (max-width: 966px) {
-  .text {
-    margin-top: 75px;
-  }
-}
-
-@media screen and (max-width: 758px) {
-  .text {
-    margin-top: 120px;
-  }
-}
-
-
-@media screen and (max-width: 606px) {
-  .text {
-    margin-top: 140px;
-  }
-}
-
-
-@media screen and (max-width: 536px) {
-  .text {
-    margin-top: 166px;
-  }
-}
-
 
 @media screen and (max-width: 536px) {
   .h2-1 {
@@ -804,7 +781,7 @@ transition: all 0.5s ease;
 
 @media screen and (max-width: 400px) {
   .h2-1 {
-    margin-top: -305.08px;
+    
     font-size: 45px;
   }
 }
@@ -840,5 +817,13 @@ transition: all 0.5s ease;
 @media screen and (max-width: 468px) {
   .text {
     margin-top: 110px;
+  }
+}
+
+
+
+@media screen and (max-width: 584px) {
+  .img_1 {
+    top: 1047.383px;
   }
 }

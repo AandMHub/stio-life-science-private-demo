@@ -1,6 +1,7 @@
 .img_top{
     margin-left: -8px;
     width: 101.2%;
+    height: 573px;
 }
 
 .h2-1{
@@ -40,21 +41,6 @@
      margin-left: 90px;
     }
     
-
-    @media screen and (max-width: 748px) {
-        .text {
-            margin-top: 68px;
-        }
-      }
-
-
-      @media screen and (max-width: 556px) {
-        .text {
-            margin-top: 100px;
-        }
-      }
-
-
       @media screen and (max-width: 436px) {
         .text {
             margin-top: 123px;
@@ -161,9 +147,10 @@
       .all_pragraphs p {
         letter-spacing: -.5px;
         margin-left: 698px;
-  margin-top: -153px;
-  font-size: 20px;
-  color: #7b7b7b;
+        margin-top: -153px;
+        font-size: 20px;
+        color: #7b7b7b;
+        margin-top: -190px;
       }
 
 
@@ -265,7 +252,7 @@
       @media screen and (max-width: 460px) {
         .all_pragraphs {
             margin-left: -640px;
-            margin-top: 34px;
+            margin-top: 64px;
         }
       }
 
@@ -789,34 +776,6 @@ transition: all 0.5s ease;
 }
 
 
-
-@media screen and (max-width: 966px) {
-  .text {
-    margin-top: 75px;
-  }
-}
-
-@media screen and (max-width: 758px) {
-  .text {
-    margin-top: 120px;
-  }
-}
-
-
-@media screen and (max-width: 606px) {
-  .text {
-    margin-top: 140px;
-  }
-}
-
-
-@media screen and (max-width: 536px) {
-  .text {
-    margin-top: 166px;
-  }
-}
-
-
 @media screen and (max-width: 536px) {
   .h2-1 {
     font-size: 30px;
@@ -902,9 +861,4 @@ transition: all 0.5s ease;
   .text {
     margin-top: 110px;
   }
-}
-
-
-.footer{
-      margin-top: 100px;
 }
