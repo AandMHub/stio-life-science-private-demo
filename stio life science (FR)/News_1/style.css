@@ -808,3 +808,7 @@ transition: all 0.5s ease;
 .container-news{
   margin-top: 80px;
 }
+
+    .header .logo {
+      width: 160%;
+    }
