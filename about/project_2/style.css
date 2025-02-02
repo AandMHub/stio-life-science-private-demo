@@ -825,3 +825,20 @@ transition: all 0.5s ease;
     margin-top: 110px;
   }
 }
+
+
+
+/* new res */
+
+@media screen and (max-width: 468px) {
+  .img_top {
+  height: 300px;
+  }
+}
+
+
+@media screen and (max-width: 468px) {
+  .text {
+    margin-top: 110px;
+  }
+}
