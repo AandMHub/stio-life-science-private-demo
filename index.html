@@ -7,20 +7,21 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        @media screen and (min-width: 1118px) {
-  .lng-item {
-    top: 60px;
-  }
-}
-    </style>
 </head>
 <body>
     <header class="header">
         <nav class="nav container">
            <div class="nav__data">
              <img src="imgs/logo.png" alt="" class="logo">
-               <li class="dropdown__item lng_item" style="color: #a19999;">
+              
+              <div class="nav__toggle" id="nav-toggle">
+               MENU
+              </div>
+              
+           </div>
+
+           
+           <li class="dropdown__item" style="color: #a19999;">
             <div class="nav__link"  style="color: #a19999;">
                English <i class="ri-arrow-down-s-line dropdown__arrow"></i>
             </div>
@@ -39,18 +40,13 @@
 
             </ul>
          </li>
-              <div class="nav__toggle" id="nav-toggle">
-               MENU
-              </div>
-              
-           </div>
 
            <!--=============== NAV MENU =============== -->
 
            <div class="nav__menu" id="nav-menu">
               <ul class="nav__list">
                  <li><a href="#" class="nav__link">Home</a></li>
-                 <li class="dropdown__item lng-item">
+                 <li class="dropdown__item">
                   <div class="nav__link">
                    About Us <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                   </div>
