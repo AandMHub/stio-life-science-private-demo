@@ -827,3 +827,18 @@ transition: all 0.5s ease;
     top: 1047.383px;
   }
 }
+
+
+
+@media screen and (max-width: 468px) {
+  .img_1 {
+    top: 820.38px;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .img_1 {
+    top: 700.383px;
+  }
+}
