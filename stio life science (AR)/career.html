@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Search</title>
+    <title>Career</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -506,11 +506,10 @@
 }
 
 .job-details {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; 
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+  border: 1px solid #dddfe3;
 }
 
 .job-card {
@@ -739,7 +738,14 @@ transition: all 0.5s ease;
 .contact-options.active {
   display: flex;
 }
-    </style>
+
+@media (min-width: 1017px) {
+  .job-details {
+    margin-right: 521px;
+    }
+}
+   
+   </style>
 </head>
 <body>
 
@@ -947,9 +953,9 @@ transition: all 0.5s ease;
     <!-- تفاصيل الوظيفة -->
     <div class="job-details">
         <div class="job-card">
-            <h2>طبيب كبير بخبرة 3
-                <br><br> سنوات</h2><br><br>
-            <p><strong>طبيب</strong><br><br>  <span>القاهرة</span></p>
+            <p><strong>طبيب كبير بخبرة 3
+                <br><br> سنوات</strong> </p><br><br>
+            <p>طبيب <span><br>القاهرة</span></p>
             <p class="more-details"><a href="./career-info.html">المزيد من التفاصيل</a></p>
         </div>
     </div>
