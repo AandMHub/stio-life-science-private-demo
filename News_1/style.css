@@ -294,10 +294,6 @@
 }
 
 
-
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
-
 * {
     padding: 0;
     margin: 0;
@@ -785,10 +781,6 @@ transition: all 0.5s ease;
 
 .contact-options.active {
   display: flex;
-}
-
-.container-news{
-  margin-top: 80px;
 }
 
 
