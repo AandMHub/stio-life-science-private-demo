@@ -292,7 +292,9 @@
     left: -0.5px;
   }
 }
-
+.container-news {
+  margin-top: 25px;
+}
 
 * {
     padding: 0;
