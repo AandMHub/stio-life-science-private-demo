@@ -1,14 +1,15 @@
 .img_top{
     margin-left: -8px;
     width: 101.2%;
+    height: 573px;
 }
 
 .h2-1{
-    margin-top: -249.08px;
   margin-bottom: -249.08px;
   text-align: center;
   font-size: 45px;
   color: white;
+  margin-top: -310.08px;
 }
 
 
@@ -17,17 +18,17 @@
     color: white;
     display: block ruby;
     text-align: center;
-    margin-top: 262px;
     margin-left: -74px;
+    margin-top: 234px;
 }
 
 .point{
     color: white;
   display: block ruby;
   text-align: center;
-  margin-top: -40px;
   margin-left: 8px;
   font-size: 30px;
+  margin-top: -44px;
 }
 
 
@@ -36,53 +37,9 @@
     color: white;
     display: block ruby;
     text-align: center;
-    margin-left: 111px;
-    margin-top: -36px;
+    margin-left: 95px;
+  margin-top: -33px;
     }
-    
-
-    @media screen and (max-width: 748px) {
-        .text {
-            margin-top: 68px;
-        }
-      }
-
-
-      @media screen and (max-width: 556px) {
-        .text {
-            margin-top: 100px;
-        }
-      }
-
-
-      @media screen and (max-width: 436px) {
-        .text {
-            margin-top: 123px;
-        }
-      }
-
-
-      @media screen and (max-width: 344px) {
-        .text {
-            margin-top: 135px;
-        }
-      }
-
-
-      @media screen and (max-width: 320px) {
-        .h2-1 {
-            margin-top: -218.08px;
-            font-size: 25px;
-        }
-      }
-
-
-      @media screen and (max-width: 320px) {
-        .link1 {
-            margin-top: 252px;
-            font-size: 14px;
-        }
-      }
 
 
       @media screen and (max-width: 1302px) {
@@ -195,7 +152,7 @@
 
       @media screen and (max-width: 584px) {
         .img_1{
-          top: 680.383px;
+          top: 1000.383px;
         }
       }
 
@@ -210,7 +167,7 @@
 
       @media screen and (max-width: 420px) {
         .img_1{
-          top: 584.383px;
+          top: 845.383px;
         }
       }
 

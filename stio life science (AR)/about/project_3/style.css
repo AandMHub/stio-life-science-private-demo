@@ -1,176 +1,107 @@
 .img_top{
-    margin-left: -8px;
-    width: 101.2%;
+  margin-left: -8px;
+  width: 101.2%;
+  height: 573px;
 }
 
 .h2-1{
-    margin-top: -249.08px;
-  margin-bottom: -249.08px;
-  text-align: center;
-  font-size: 45px;
-  color: white;
+margin-bottom: -249.08px;
+text-align: center;
+font-size: 45px;
+color: white;
+margin-top: -310.08px;
 }
 
 
 .link1{
-    text-decoration: none;
-    color: white;
-    display: block ruby;
-    text-align: center;
-    margin-top: 262px;
-    margin-left: -74px;
+  text-decoration: none;
+  color: white;
+  display: block ruby;
+  text-align: center;
+  margin-left: -74px;
+  margin-top: 234px;
 }
 
 .point{
-    color: white;
-  display: block ruby;
-  text-align: center;
-  margin-top: -40px;
-  font-size: 30px;
-  margin-left: -3px;
+  color: white;
+display: block ruby;
+text-align: center;
+margin-left: 8px;
+font-size: 30px;
+margin-top: -44px;
 }
 
 
 .link2{
-    text-decoration: none;
-    color: white;
-    display: block ruby;
-    text-align: center;
-    margin-top: -36px;
-    margin-left: 85px;
+  text-decoration: none;
+  color: white;
+  display: block ruby;
+  text-align: center;
+  margin-left: 95px;
+margin-top: -33px;
+  }
+
+
+    @media screen and (max-width: 1302px) {
+      .img_top {
+          width: 101.3%;
+      }
     }
-    
 
-    @media screen and (max-width: 748px) {
-        .text {
-            margin-top: 68px;
-        }
+
+    @media screen and (max-width: 1192px) {
+      .img_top {
+          width: 101.4%;
       }
+    }
 
 
-      @media screen and (max-width: 556px) {
-        .text {
-            margin-top: 100px;
-        }
+    @media screen and (max-width: 1120px) {
+      .img_top {
+          width: 101.5%;
       }
+    }
 
 
-      @media screen and (max-width: 436px) {
-        .text {
-            margin-top: 123px;
-        }
+    @media screen and (max-width: 1026px) {
+      .img_top {
+          width: 101.6%;
       }
+    }
 
 
-      @media screen and (max-width: 344px) {
-        .text {
-            margin-top: 135px;
-        }
+    @media screen and (max-width: 938px) {
+      .img_top {
+          width: 101.7%;
       }
+    }
 
 
-      @media screen and (max-width: 320px) {
-        .h2-1 {
-            margin-top: -218.08px;
-            font-size: 25px;
-        }
+
+    @media screen and (max-width: 890px) {
+      .img_top {
+          width: 101.8%;
       }
+    }
 
 
-      @media screen and (max-width: 320px) {
-        .link1 {
-            margin-top: 252px;
-            font-size: 14px;
-        }
+    @media screen and (max-width: 824px) {
+      .img_top {
+          width: 102%;
       }
+    }
 
 
-      @media screen and (max-width: 1302px) {
-        .img_top {
-            width: 101.3%;
-        }
+    @media screen and (max-width: 694) {
+      .img_top {
+          width: 103%;
       }
+    }
 
 
-      @media screen and (max-width: 1192px) {
-        .img_top {
-            width: 101.4%;
-        }
-      }
-
-
-      @media screen and (max-width: 1120px) {
-        .img_top {
-            width: 101.5%;
-        }
-      }
-
-
-      @media screen and (max-width: 1026px) {
-        .img_top {
-            width: 101.6%;
-        }
-      }
-
-
-      @media screen and (max-width: 938px) {
-        .img_top {
-            width: 101.7%;
-        }
-      }
-
-
-
-      @media screen and (max-width: 890px) {
-        .img_top {
-            width: 101.8%;
-        }
-      }
-
-
-      @media screen and (max-width: 824px) {
-        .img_top {
-            width: 102%;
-        }
-      }
-
-
-      @media screen and (max-width: 694) {
-        .img_top {
-            width: 103%;
-        }
-      }
-
-
-      .img-1{
-        top: 450.5px;
-        height: auto;
-        max-width: 100%;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-        margin-top: 350px;
-        display: block;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: -200px;
-      }
-
-
-
-      .card img{
-        margin-top: 350px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: -200px;
-      }
-
-
-      body{
-        background-color: #f5efee;
-      }
+    body{
+      background-color: #f5efee;
+    }
 
       .img_new{
         width: 40%;
