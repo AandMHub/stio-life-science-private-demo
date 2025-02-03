@@ -871,4 +871,8 @@ body {
   font-family: 'MyFont', sans-serif;
 }
 
-
+@media (min-width: 1308px) {
+    .all_pragraph {
+          padding-top: 70px;
+    }
+}
