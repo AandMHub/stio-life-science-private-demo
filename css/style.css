@@ -337,6 +337,7 @@
     height: 100%;
     top: 115px;
     max-width: 85%;
+    max-height: 80%;
   }
 
   .swiper-slide {
@@ -763,9 +764,6 @@
 }
 
 .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   max-width: 1200px;
   margin: 20px auto 0;
   padding-top: 20px;
@@ -874,4 +872,227 @@ transition: all 0.5s ease;
 
 .contact-options.active {
   display: flex;
+}
+
+.swiper{
+  max-width: 88%;
+  cursor: pointer;
+}
+
+.header{
+  position: absolute;
+  background-color: #f5efee;
+}
+
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.26);
+  border-radius: 0px;
+}
+
+
+.card {
+  background: #1b181800;
+  border-radius: 0;
+  box-shadow: 0 0 0 0;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+
+.card {
+  text-align: left;
+}
+
+.support-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3b9358;
+  color: white;
+  padding: 100px;
+  border-radius: 0px;
+  margin: 0px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.support-left{
+  margin-left: 80px;
+}
+
+.support-left div{
+  line-height: 3rem;
+}
+
+.support-left i{
+  font-size: 30px;
+  margin-top: -50px;
+}
+
+.support-left h3{
+  font-size: 35px;
+}
+
+.support-left p{
+  font-size: 20px;
+}
+
+.support-right{
+  line-height: 7rem;
+  margin-right: 152px;
+}
+
+.support-right h3{
+  font-size: 30px;
+}
+
+.support-right button{
+  margin-right: 15px;
+  font-size: 24px;
+}
+
+.about-us-container {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.about-us {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 65px;
+  border-radius: 8px;
+  margin-top: 0px;
+}
+
+.about-us-container h2{
+  padding-left: 0px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  width: 10%;
+  margin-left: 85px;
+  padding-bottom: 20px;
+  border-color: #3b9358;
+}
+
+.products h1{
+  padding-left: 0px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  width: 15%;
+  margin-left: 85px;
+  padding-bottom: 20px;
+  border-color: #3b9358;
+}
+
+.product img {
+  width: 200px;
+  height: 95px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 300px;
+}
+
+.container-contact h2{
+  padding-left: 0px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  width: 15%;
+  margin-left: 0px;
+  padding-bottom: 20px;
+  border-color: #3b9358;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+
+.container-contact {
+  width: 90%;
+  max-width: 1225px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0);
+  padding: 20px;
+  box-shadow: 0 0 0 0;
+  border-radius: 8px;
+}
+
+.container-contact input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #666666;
+  border-radius: 0px;
+  font-size: 16px;
+}
+
+/* .footer-bottom ابحث بيها وشيل ال flex */
+
+.footer-top{
+  border: 0px;
+}
+
+.footer-bottom{
+  text-align: center;
+}
+
+.footer input{
+  border-radius: 25px 0px 0px 25px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  padding: 13px 10px 13px 20px;
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 42px;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #f3f3f3;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-left-width: 1px;
+    border-left-style: solid;
+  border-radius: .25rem;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  border-radius: 25px 0px 0px 25px;
+}
+
+
+.swiper-slide{
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.card-container{
+  margin-top: 215px;
+}
+
+.about-us{
+  padding-bottom: 20px;
 }
