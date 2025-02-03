@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
@@ -450,10 +450,11 @@ margin-top: -44px;
 }
 
 .container-us {
-    display: flex;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 194px;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 200px;
+  margin-bottom: 150px;
 }
 
 .form-container, .info-container {
@@ -477,7 +478,7 @@ h1{
 
 h3 {
     margin-top: 10px;
-    color: #333;
+    color: #172760;
     margin-bottom: 22px;
 }
 
@@ -492,6 +493,7 @@ h3 {
     margin-bottom: 10px;
     margin-top: 20px;
     margin-bottom: 40px;
+    flex-direction: column;
 }
 
 .grid {
@@ -501,11 +503,9 @@ h3 {
 }
 
 .grid input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-left: -15px;
+  padding: 10px;
+  margin-left: -15px;
+  margin-right: 15px;
 }
 
 button {
@@ -530,10 +530,10 @@ button {
 }
 
 .info-container {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 30px 50px 0px rgba(7.999999999999998, 2.000000000000002, 33, 0.1);
+  margin-top: 135px;
 }
 
 .social-icons {
@@ -1169,7 +1169,15 @@ transition: all 0.5s ease;
     width: 113%;
   }
 }
-
+.text-box, .social-box {
+  margin-left: 50px;
+}
+.text-box p {
+  color: #484A51;
+  font-size: 18px;
+  font-weight: 400;
+}
+    
     </style>
 
 </head>
@@ -1361,8 +1369,9 @@ transition: all 0.5s ease;
               يرجى التأكد من ملء جميع الحقول التي تحتوي على علامة النجمة*</p>
               </div>
             <form>
+              <div style="display: flex;">
                 <div class="section">
-                    <label>الرجاء الاختيار من التالي:*</label>
+                    <label style="  margin-right: 55px;">الرجاء الاختيار من التالي:*</label>
                     <div class="radio-group">
                         <label><input type="radio" name="title" value="Mr">  السيد</label>
                         <label><input type="radio" name="title" value="Mrs"> السّيدة</label>
@@ -1382,7 +1391,7 @@ transition: all 0.5s ease;
                         <label><input type="radio" name="inquiry" value="Others"> أخر</label>
                     </div>
                 </div>
-
+              </div>
                 <div class="grid">
                     <input type="text" placeholder="الاسم الكامل*" required>
                     <input type="text" placeholder=" شركة/مستشفى*" required>
@@ -1405,23 +1414,27 @@ transition: all 0.5s ease;
 
         <!-- قسم المعلومات -->
         <div class="info-container">
+          <div class="text-box">
             <h3>Our Location</h3>
             <p>33 Nazih Khalifa, Heliopolis, Cairo, Egypt</p>
-
+          </div>
+          <div class="text-box">
             <h3>Quick Contact</h3>
             <p>Email: info@stollifescience.com</p>
-
+          </div>
+          <div class="text-box">
             <h3>Phone Number</h3>
             <p>+02 24500837</p>
-
+          </div>
+          <div class="social-box">
             <h3>Follow us</h3>
             <div class="social-icons">
-              <a href="../stio life science/Our products/Our products4/Our prodact1.html"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="contact-us.html"><i class="fab fa-facebook-f"></i></a>
+              <a href="contact-us.html"><i class="fab fa-twitter"></i></a>
+              <a href="contact-us.html"><i class="fab fa-instagram"></i></a>
+              <a href="contact-us.html"><i class="fab fa-linkedin-in"></i></a>
             </div>
-
+          </div>
             <div class="map-container">
                 <iframe
                     src="https://www.google.com/maps?q=33+Nazih+Khalifa,+Heliopolis,+Cairo,+Egypt&output=embed"
