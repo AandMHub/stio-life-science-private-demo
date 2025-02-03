@@ -157,10 +157,6 @@
 
 
 
-
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
-
 * {
     padding: 0;
     margin: 0;
@@ -168,7 +164,6 @@
   
   body {
     background-color: #f5efee;
-    font-family: "Montserrat", sans-serif;
   }
   
   ul,li {
@@ -1291,6 +1286,20 @@ transition: all 0.5s ease;
   padding-bottom: 30px;
 }
 
+        
+@font-face {
+  font-family: 'MyFont';
+  src: url('../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff2') format('woff2'),
+       url('../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff') format('woff'),
+       url('../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'MyFont', sans-serif;
+}
+        
     </style>
 
 </head>
