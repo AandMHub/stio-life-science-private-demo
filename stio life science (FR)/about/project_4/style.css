@@ -870,3 +870,9 @@ body {
   font-family: 'MyFont', sans-serif;
 }
 
+    @media (min-width: 1411px) {
+        .all_pragraphs p {
+              margin-left: 750px;
+        }
+    }
+
