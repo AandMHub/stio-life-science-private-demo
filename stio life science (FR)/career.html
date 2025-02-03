@@ -13,6 +13,7 @@
 .img_top{
     margin-left: -8px;
     width: 101.2%;
+    height: 573px;
 }
 
 .h2-1{
@@ -21,6 +22,7 @@
   text-align: center;
   font-size: 45px;
   color: white;
+  margin-top: -310.08px;
 }
 
 
@@ -29,8 +31,8 @@
     color: white;
     display: block ruby;
     text-align: center;
-    margin-top: 262px;
     margin-left: -74px;
+    margin-top: 250px;
 }
 
 .point{
@@ -50,27 +52,6 @@
     margin-top: -34px;
     margin-left: 90px;
     }
-    
-
-    @media screen and (max-width: 748px) {
-        .text {
-            margin-top: 68px;
-        }
-      }
-
-
-      @media screen and (max-width: 556px) {
-        .text {
-            margin-top: 100px;
-        }
-      }
-
-
-      @media screen and (max-width: 436px) {
-        .text {
-            margin-top: 123px;
-        }
-      }
 
 
       @media screen and (max-width: 344px) {
@@ -153,8 +134,13 @@
       }
 
 
+      
 
 
+
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 * {
     padding: 0;
@@ -163,6 +149,7 @@
   
   body {
     background-color: #f5efee;
+    font-family: "Montserrat", sans-serif;
   }
   
   ul,li {
@@ -191,13 +178,7 @@
   
   /*=============== HEADER ===============*/
   .header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    z-index: 100;
-    background-color: #fff;
-    padding-bottom: 30px;
   }
 
   .header .logo{
@@ -491,6 +472,7 @@
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
+    margin-top: 90px;
 }
 
 .search-input {
@@ -542,9 +524,14 @@
 .job-details {
     background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; 
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+  border: 1px solid #dddfe3;
+}
+
+@media (min-width: 1017px) {
+  .job-details{
+    margin-right: 514px;
+    }
 }
 
 .job-card {
@@ -562,8 +549,8 @@
     margin: 0;
 }
 
-.job-card .more-details {
-    color: #777;
+.job-card .more-details a{
+    color: #168312;
     font-size: 0.9rem;
 }
 
@@ -773,28 +760,116 @@ transition: all 0.5s ease;
 .contact-options.active {
   display: flex;
 }
-    .header .logo {
-      width: 160%;
-    }
-                @media screen and (max-width: 1118px) {
-  .header .logo {
-    margin-left: 0;
-    width: 130px;
-    margin-top: 35px;
+
+
+
+@media screen and (max-width: 536px) {
+  .h2-1 {
+    font-size: 30px;
   }
 }
 
-        @font-face {
-  font-family: 'MyFont';
-  src: url('../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff2') format('woff2'),
-       url('../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff') format('woff'),
-       url('../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+
+
+
+@media screen and (max-width: 460px) {
+  .text {
+    font-size: 13px;
+  }
 }
 
-body {
-  font-family: 'MyFont', sans-serif;
+
+@media screen and (max-width: 460px) {
+  .link1 {
+    margin-top: 252px;
+  }
+}
+
+
+
+@media screen and (max-width: 460px) {
+  .link2 {
+    margin-top: -21px;
+  }
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .img_top {
+    height: 247px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .h2-1 {
+    margin-top: -305.08px;
+    font-size: 45px;
+  }
+}
+
+
+
+      @media screen and (max-width: 436px) {
+        .text {
+          font-size: 18px;
+        }
+      }
+
+
+
+      @media screen and (max-width: 436px) {
+        .h2-1 {
+          margin-left: 8px;
+          margin-bottom: -260.08px;
+          font-size: 30px;
+        }
+      }
+
+
+      @media screen and (max-width: 436px) {
+        .link1 {
+          margin-top: 252px;
+        }
+      }
+
+      @media screen and (max-width: 436px) {
+        .link2 {
+          margin-top: -38px;
+          margin-left: 97px;
+        }
+      }
+
+
+      @media screen and (max-width: 436px) {
+        .point {
+          margin-top: -46px;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .text {
+          margin-top: 160px;
+        }
+      }
+
+      @media screen and (max-width: 320px) {
+        .link2 {
+          font-size: 15px;
+          margin-top: -31px;
+        }
+      }
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+  padding-bottom: 30px;
 }
 
 
@@ -969,9 +1044,7 @@ body {
       <img class="img_top" src="imgs/background.png" alt="">
       <div class="text">
           <h2 class="h2-1">Postes vacants</h2>
-          <a class="link1" href="">Accueil</a>
-          <h3 class="point">.</h3>
-          <a class="link2" href="">Carrière</a>
+          <a style="margin-left: 10px;" class="link1" href="">Accueil  .  Carrière</a>
       </div>
   </div>
   
