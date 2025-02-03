@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Search</title>
+    <title>Career</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -178,13 +178,7 @@
   
   /*=============== HEADER ===============*/
   .header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    z-index: 100;
-    background-color: #fff;
-    padding-bottom: 30px;
   }
 
   .header .logo{
@@ -530,9 +524,14 @@
 .job-details {
     background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; 
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+  border: 1px solid #dddfe3;
+}
+
+@media (min-width: 1017px) {
+  .job-details{
+    margin-right: 471px;
+  }
 }
 
 .job-card {
@@ -550,8 +549,8 @@
     margin: 0;
 }
 
-.job-card .more-details {
-    color: #777;
+.job-card .more-details a{
+    color: #168312;
     font-size: 0.9rem;
 }
 
@@ -771,13 +770,6 @@ transition: all 0.5s ease;
 }
 
 
-
-@media screen and (max-width: 460px) {
-  .h2-1 {
-    margin-top: -226.08px;
-    font-size: 23px;
-  }
-}
 
 
 @media screen and (max-width: 460px) {
@@ -1042,7 +1034,7 @@ transition: all 0.5s ease;
         </nav>
      </header>
 
-     <div class="container-news">
+     <div class="container-news" style="  margin-top: 30px;">
       <img class="img_top" src="imgs/background.png" alt="">
       <div class="text">
       <h2 class="h2-1">Vacancies</h2>
@@ -1082,10 +1074,10 @@ transition: all 0.5s ease;
         <!-- تفاصيل الوظيفة -->
         <div class="job-details">
             <div class="job-card">
-                <h2>Senior Doctor with 3
-                    <br><br> Years of exp</h2><br><br>
-                <p><strong>Doctor</strong><br><br>  <span>Cairo</span></p>
-                <p class="more-details"><a href="./career-info.html">More Details</a></p>
+                <p><strong>Senior Doctor with 3</strong>
+                    <br><br> <strong> Years of exp</strong></p><br><br>
+                <p>Doctor<br>  <span>Cairo</span></p>
+                <p class="more-details"><a href="./career-info.html"><span class="awsm-job-more">More Details <span>-></span></span></a></p>
             </div>
         </div>
     </div>
