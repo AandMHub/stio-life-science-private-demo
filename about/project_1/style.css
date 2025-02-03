@@ -37,9 +37,16 @@
     color: white;
     display: block ruby;
     text-align: center;
-    margin-left: 90px;
+    margin-left: 111px;
     margin-top: -25px;
     }
+    
+
+    @media screen and (max-width: 748px) {
+        .text {
+            margin-top: 68px;
+        }
+      }
 
 
       @media screen and (max-width: 556px) {
@@ -136,57 +143,93 @@
       }
 
 
-      .img-1{
-        top: 450.5px;
-        height: auto;
-        max-width: 100%;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-        margin-top: 350px;
-        display: block;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: -200px;
-      }
-
-
-
-      .card img{
-        margin-top: 350px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: -200px;
-      }
-
-
       body{
         background-color: #f5efee;
       }
 
 
-      .card h2{
-        margin-top: 711.92px;
-        text-align: center;
-        color: #7a7a7a;
-        font-size: 22px;
-        padding-top: 32px;
+      .img_1{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        margin-top: -294px;
       }
 
 
-      .card p{
-        text-align: center;
-        font-size: 22px;
-        color: #9c9b9a;
-        font-size: 22px;
-        margin-top: 4px;
+      .all_pragraph{
+        padding: 10px 10px 10px 10px;
+        margin-top: 810px;
+  margin-bottom: -169px;
+  margin-left: 115px;
+      }
+
+      .all_pragraph p{
+        letter-spacing: -.5px;
+        line-height: 2.9;
+  color: #7a7a7a;
+      }
+
+
+
+      @media screen and (max-width: 1094px) {
+        .all_pragraph{
+          margin-left: 88px;
+          margin-top: 780px;
+        }
+      }
+
+
+      @media screen and (max-width: 992px) {
+        .all_pragraph{
+          padding-top: 0px;
+          margin-left: 61px;
+        }
+      }
+
+
+
+      @media screen and (max-width: 786px) {
+        .img_1{
+          margin-top: -221px;
+        }
+      }
+
+
+      @media screen and (max-width: 584px) {
+        .img_1{
+          top: 680.383px;
+        }
+      }
+
+
+@media screen and (max-width: 584px) {
+        .all_pragraph{
+          margin-top: 482px;
+          margin-left: 42px;
+        }
+      }
+
+
+      @media screen and (max-width: 420px) {
+        .img_1{
+          top: 584.383px;
+        }
+      }
+
+
+@media screen and (max-width: 420px) {
+        .all_pragraph{
+          margin-top: 352px;
+          margin-left: 24px;        
+        }
       }
 
 
 
 
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 * {
     padding: 0;
@@ -195,6 +238,7 @@
   
   body {
     background-color: #f5efee;
+    font-family: "Montserrat", sans-serif;
   }
   
   ul,li {
@@ -517,6 +561,7 @@
   background-color: #3b9358;
   color: #fff;
   padding: 40px 20px;
+  margin-top: 285px;
 }
 
 .footer-top {
@@ -687,17 +732,11 @@ transition: all 0.5s ease;
 }
 
 
-@media screen and (max-width: 606px) {
-  .text {
-    margin-top: -220.08px;
-  }
-}
-
 
 
 @media screen and (max-width: 536px) {
   .h2-1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -743,6 +782,7 @@ transition: all 0.5s ease;
 
 @media screen and (max-width: 400px) {
   .h2-1 {
+    
     font-size: 45px;
   }
 }
@@ -781,16 +821,45 @@ transition: all 0.5s ease;
   }
 }
 
-@font-face {
-  font-family: 'MyFont';
-  src: url('../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff2') format('woff2'),
-       url('../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff') format('woff'),
-       url('../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+
+
+@media screen and (max-width: 584px) {
+  .img_1 {
+    top: 1047.383px;
+  }
 }
 
-body {
-  font-family: 'MyFont', sans-serif;
+
+
+@media screen and (max-width: 468px) {
+  .img_1 {
+    top: 820.38px;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .img_1 {
+    top: 700.383px;
+  }
+}
+
+
+.div_img_p{
+  padding-top: 0px;
+  padding-right: 137px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.all_pragraph p{
+  line-height: 2;
+}
+
+
+@media screen and (max-width: 536px) {
+  .all_pragraph {
+    width: 100%;
+  }
 }
 
