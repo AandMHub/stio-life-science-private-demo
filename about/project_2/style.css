@@ -5,11 +5,11 @@
 }
 
 .h2-1{
-    margin-top: -249.08px;
   margin-bottom: -249.08px;
   text-align: center;
   font-size: 45px;
   color: white;
+  margin-top: -310.08px;
 }
 
 
@@ -18,17 +18,17 @@
     color: white;
     display: block ruby;
     text-align: center;
-    margin-top: 262px;
     margin-left: -74px;
+    margin-top: 234px;
 }
 
 .point{
     color: white;
   display: block ruby;
   text-align: center;
-  margin-top: -40px;
   margin-left: 8px;
   font-size: 30px;
+  margin-top: -44px;
 }
 
 
@@ -37,53 +37,9 @@
     color: white;
     display: block ruby;
     text-align: center;
-    margin-left: 111px;
-    margin-top: -25px;
+    margin-left: 95px;
+  margin-top: -33px;
     }
-    
-
-    @media screen and (max-width: 748px) {
-        .text {
-            margin-top: 68px;
-        }
-      }
-
-
-      @media screen and (max-width: 556px) {
-        .text {
-            margin-top: 100px;
-        }
-      }
-
-
-      @media screen and (max-width: 436px) {
-        .text {
-            margin-top: 123px;
-        }
-      }
-
-
-      @media screen and (max-width: 344px) {
-        .text {
-            margin-top: 135px;
-        }
-      }
-
-
-      @media screen and (max-width: 320px) {
-        .h2-1 {
-            margin-top: -218.08px;
-            font-size: 25px;
-        }
-      }
-
-
-      @media screen and (max-width: 320px) {
-        .link1 {
-            margin-top: 252px;
-            font-size: 14px;
-        }
-      }
 
 
       @media screen and (max-width: 1302px) {
@@ -166,8 +122,6 @@
 
       .all_pragraph p{
         letter-spacing: -.5px;
-        line-height: 2.9;
-  color: #7a7a7a;
       }
 
 
@@ -198,7 +152,7 @@
 
       @media screen and (max-width: 584px) {
         .img_1{
-          top: 680.383px;
+          top: 1000.383px;
         }
       }
 
@@ -213,7 +167,7 @@
 
       @media screen and (max-width: 420px) {
         .img_1{
-          top: 584.383px;
+          top: 845.383px;
         }
       }
 
@@ -731,114 +685,22 @@ transition: all 0.5s ease;
 }
 
 
-
-
-@media screen and (max-width: 536px) {
-  .h2-1 {
-    font-size: 30px;
+@media screen and (max-width: 420px) {
+  .img_1 {
+    top: 870.383px;
+    width: 250px;
   }
 }
-
-
-
-@media screen and (max-width: 460px) {
-  .h2-1 {
-    margin-top: -226.08px;
-    font-size: 23px;
-  }
-}
-
-
-@media screen and (max-width: 460px) {
-  .text {
-    font-size: 13px;
-  }
-}
-
-
-@media screen and (max-width: 460px) {
-  .link1 {
-    margin-top: 252px;
-  }
-}
-
-
-
-@media screen and (max-width: 460px) {
-  .link2 {
-    margin-top: -21px;
-  }
-}
-
-
-
-@media screen and (max-width: 400px) {
-  .img_top {
-    height: 247px;
-  }
-}
-
-
-@media screen and (max-width: 400px) {
-  .h2-1 {
-    
-    font-size: 45px;
-  }
-}
-
-
-
-/* new res */
-
-@media screen and (max-width: 468px) {
-  .img_top {
-  height: 300px;
-  }
-}
-
-
-@media screen and (max-width: 468px) {
-  .text {
-    margin-top: 110px;
-  }
-}
-
-
-
-/* new res */
-
-@media screen and (max-width: 468px) {
-  .img_top {
-  height: 300px;
-  }
-}
-
-
-@media screen and (max-width: 468px) {
-  .text {
-    margin-top: 110px;
-  }
-}
-
-
 
 @media screen and (max-width: 584px) {
-  .img_1 {
-    top: 1047.383px;
-  }
-}
-
-
-
-@media screen and (max-width: 468px) {
-  .img_1 {
-    top: 820.38px;
+  .img_1{
+    top: 940.383px;
   }
 }
 
 
 @media screen and (max-width: 420px) {
-  .img_1 {
-    top: 700.383px;
+  .img_1{
+    top: 880.383px;
   }
 }
