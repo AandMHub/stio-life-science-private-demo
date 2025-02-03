@@ -1122,8 +1122,8 @@ transition: all 0.5s ease;
 body {
   font-family: 'MyFont', sans-serif;
 }
-  @media screen (min-width: 590px) {
-      .h2{
-            margin-left: 100px;
-      }
+@media  (min-width: 590px) {
+  .head-sec{
+        margin-left: 100px;
   }
+}
