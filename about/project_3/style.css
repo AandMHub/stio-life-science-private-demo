@@ -1,107 +1,164 @@
 .img_top{
-  margin-left: -8px;
-  width: 101.2%;
-  height: 573px;
+    margin-left: -8px;
+    width: 101.2%;
+    height: 573px;
 }
 
 .h2-1{
-margin-bottom: -249.08px;
-text-align: center;
-font-size: 45px;
-color: white;
-margin-top: -310.08px;
+    margin-top: -249.08px;
+  margin-bottom: -249.08px;
+  text-align: center;
+  font-size: 45px;
+  color: white;
 }
 
 
 .link1{
-  text-decoration: none;
-  color: white;
-  display: block ruby;
-  text-align: center;
-  margin-left: -74px;
-  margin-top: 234px;
+    text-decoration: none;
+    color: white;
+    display: block ruby;
+    text-align: center;
+    margin-top: 262px;
+    margin-left: -74px;
 }
 
 .point{
-  color: white;
-display: block ruby;
-text-align: center;
-margin-left: 8px;
-font-size: 30px;
-margin-top: -44px;
+    color: white;
+  display: block ruby;
+  text-align: center;
+  margin-top: -40px;
+  font-size: 30px;
+  margin-left: -3px;
 }
 
 
 .link2{
-  text-decoration: none;
-  color: white;
-  display: block ruby;
-  text-align: center;
-  margin-left: 95px;
-margin-top: -33px;
-  }
+    text-decoration: none;
+    color: white;
+    display: block ruby;
+    text-align: center;
+    margin-top: -25px;
+    margin-left: 90px;
+    }
+  
 
 
-    @media screen and (max-width: 1302px) {
-      .img_top {
-          width: 101.3%;
+      @media screen and (max-width: 436px) {
+        .text {
+            margin-top: 123px;
+        }
       }
-    }
 
 
-    @media screen and (max-width: 1192px) {
-      .img_top {
-          width: 101.4%;
+      @media screen and (max-width: 344px) {
+        .text {
+            margin-top: 135px;
+        }
       }
-    }
 
 
-    @media screen and (max-width: 1120px) {
-      .img_top {
-          width: 101.5%;
+      @media screen and (max-width: 320px) {
+        .h2-1 {
+            margin-top: -218.08px;
+            font-size: 25px;
+        }
       }
-    }
 
 
-    @media screen and (max-width: 1026px) {
-      .img_top {
-          width: 101.6%;
+      @media screen and (max-width: 320px) {
+        .link1 {
+            margin-top: 252px;
+            font-size: 14px;
+        }
       }
-    }
 
 
-    @media screen and (max-width: 938px) {
-      .img_top {
-          width: 101.7%;
+      @media screen and (max-width: 1302px) {
+        .img_top {
+            width: 101.3%;
+        }
       }
-    }
 
 
-
-    @media screen and (max-width: 890px) {
-      .img_top {
-          width: 101.8%;
+      @media screen and (max-width: 1192px) {
+        .img_top {
+            width: 101.4%;
+        }
       }
-    }
 
 
-    @media screen and (max-width: 824px) {
-      .img_top {
-          width: 102%;
+      @media screen and (max-width: 1120px) {
+        .img_top {
+            width: 101.5%;
+        }
       }
-    }
 
 
-    @media screen and (max-width: 694) {
-      .img_top {
-          width: 103%;
+      @media screen and (max-width: 1026px) {
+        .img_top {
+            width: 101.6%;
+        }
       }
-    }
 
 
-    body{
-      background-color: #f5efee;
-    }
+      @media screen and (max-width: 938px) {
+        .img_top {
+            width: 101.7%;
+        }
+      }
+
+
+
+      @media screen and (max-width: 890px) {
+        .img_top {
+            width: 101.8%;
+        }
+      }
+
+
+      @media screen and (max-width: 824px) {
+        .img_top {
+            width: 102%;
+        }
+      }
+
+
+      @media screen and (max-width: 694) {
+        .img_top {
+            width: 103%;
+        }
+      }
+
+
+      .img-1{
+        top: 450.5px;
+        height: auto;
+        max-width: 100%;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        margin-top: 350px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: -200px;
+      }
+
+
+
+      .card img{
+        margin-top: 350px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: -200px;
+      }
+
+
+      body{
+        background-color: #f5efee;
+      }
 
       .img_new{
         width: 40%;
@@ -241,6 +298,9 @@ margin-top: -33px;
 
 
 
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
 * {
     padding: 0;
     margin: 0;
@@ -248,6 +308,7 @@ margin-top: -33px;
   
   body {
     background-color: #f5efee;
+    font-family: "Montserrat", sans-serif;
   }
   
   ul,li {
@@ -738,15 +799,92 @@ transition: all 0.5s ease;
 .contact-options.active {
   display: flex;
 }
-@font-face {
-  font-family: 'MyFont';
-  src: url('../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff2') format('woff2'),
-       url('../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff') format('woff'),
-       url('../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+
+
+
+@media screen and (max-width: 536px) {
+  .h2-1 {
+    font-size: 30px;
+  }
 }
 
-body {
-  font-family: 'MyFont', sans-serif;
+
+
+@media screen and (max-width: 460px) {
+  .h2-1 {
+    margin-top: -226.08px;
+    font-size: 23px;
+  }
+}
+
+
+@media screen and (max-width: 460px) {
+  .text {
+    font-size: 13px;
+  }
+}
+
+
+@media screen and (max-width: 460px) {
+  .link1 {
+    margin-top: 252px;
+  }
+}
+
+
+
+@media screen and (max-width: 460px) {
+  .link2 {
+    margin-top: -21px;
+  }
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .img_top {
+    height: 247px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .h2-1 {
+    font-size: 45px;
+  }
+}
+
+
+
+
+/* new res */
+
+@media screen and (max-width: 468px) {
+  .img_top {
+  height: 300px;
+  }
+}
+
+
+@media screen and (max-width: 468px) {
+  .text {
+    margin-top: 110px;
+  }
+}
+
+
+
+/* new res */
+
+@media screen and (max-width: 468px) {
+  .img_top {
+  height: 300px;
+  }
+}
+
+
+@media screen and (max-width: 468px) {
+  .text {
+    margin-top: 110px;
+  }
 }
