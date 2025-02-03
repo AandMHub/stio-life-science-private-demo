@@ -876,6 +876,9 @@ body {
   font-family: 'MyFont', sans-serif;
 }
 
-.img_1 {
-      padding-bottom: 20px;
+
+@media (min-width: 1308px) {
+    .all_pragraph {
+          padding-top: 70px;
+    }
 }
