@@ -270,12 +270,6 @@ margin-left: 120px;
       }
     }
 
-
-
-
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -283,7 +277,6 @@ margin-left: 120px;
 
 body {
   background-color: #f5efee;
-  font-family: "Montserrat", sans-serif;
 }
 
 ul,li {
@@ -862,3 +855,18 @@ height: 300px;
   margin-top: 110px;
 }
 }
+
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff2') format('woff2'),
+       url('../../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff') format('woff'),
+       url('../../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'MyFont', sans-serif;
+}
+
