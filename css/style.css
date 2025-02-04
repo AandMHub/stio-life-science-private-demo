@@ -352,12 +352,13 @@
     color: #FFF;
   }
 
-  .swiper-slide p{
-    position: relative;
-    z-index: 10;
-    color: #f8e5e5;
-    width: 820px;
-  }
+.swiper-slide p {
+  position: relative;
+  z-index: 10;
+  color: #f8e5e5;
+  width: 80%;
+  line-height: 30px;
+}
 
 
   .swiper-slide::before{
