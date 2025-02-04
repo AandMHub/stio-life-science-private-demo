@@ -871,3 +871,16 @@ left: 75px;
 .menu-icon.active .bar:nth-child(3) {
     transform: translateY(-12px) rotate(-45deg);
 }
+
+
+@media screen and (max-width: 401px) {
+  .menu-icon{
+      left: -51px;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  .menu-icon{
+        left: -69px;
+  }
+}
