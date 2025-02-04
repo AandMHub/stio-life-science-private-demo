@@ -822,3 +822,27 @@ body {
 .menu-icon.active .bar:nth-child(3) {
     transform: translateY(-12px) rotate(-45deg);
 }
+
+
+.for-small{
+  display: none;
+}
+
+@media  (max-width: 1117px) {
+  .for-small{
+    display: block;
+    color: #a19999;
+    position: fixed;
+    left: 170px;
+    top: 9px;
+  }
+  .nav__link-head:hover{
+    background-color: #ffffff00;
+  }
+}
+
+@media  (max-width: 1117px) {
+  .for-big{
+    display: none;
+  }
+}
