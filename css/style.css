@@ -1166,4 +1166,23 @@ body {
 .menu-icon.active .bar:nth-child(3) {
     transform: translateY(-12px) rotate(-45deg);
 }
+.phon-img{
+  display: block;
+} 
 
+.phon-img1{
+  display: none;
+}
+
+@media  (max-width: 897px) {
+.phon-img1{
+  display: block;
+}
+}
+
+@media  (max-width: 897px) {
+
+.phon-img{
+  display: none;
+}
+}
