@@ -918,3 +918,7 @@ width: 323px;
 body {
   font-family: 'MyFont', sans-serif;
 }
+
+.p_News{
+    font-weight: bold;
+}
