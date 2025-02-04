@@ -1169,3 +1169,9 @@ body {
 .menu-icon.active .bar:nth-child(3) {
     transform: translateY(-12px) rotate(-45deg);
 }
+
+  @media  (max-width: 590px) {
+      .head-sec{
+        margin-left: 35px;
+      }
+  }
