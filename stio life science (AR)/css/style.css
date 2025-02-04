@@ -1123,3 +1123,10 @@ body {
   padding-bottom: 30px;
   direction: rtl;
 }
+
+
+.card-content h3{
+    padding: 15px;
+      text-align: right;
+}
+
