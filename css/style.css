@@ -1110,6 +1110,11 @@ body {
             margin-left: 100px;
       }
   }
+  @media  (max-width: 590px) {
+      .head-sec{
+        margin-left: 35px;
+      }
+  }
 
   .header {
     position: fixed;
