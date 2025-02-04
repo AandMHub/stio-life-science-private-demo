@@ -160,8 +160,9 @@ font-size: 30px;
     .all_pragraph{
       padding: 10px 10px 10px 10px;
       margin-top: 810px;
-margin-bottom: -169px;
-margin-left: 115px;
+      margin-bottom: -169px;
+      margin-left: 115px;
+      font-size: 18px;
     }
 
     .all_pragraph p{
@@ -226,6 +227,11 @@ color: #7a7a7a;
     }
 
 
+
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -233,6 +239,7 @@ color: #7a7a7a;
 
 body {
   background-color: #f5efee;
+  font-family: "Montserrat", sans-serif;
 }
 
 ul,li {
@@ -777,7 +784,7 @@ display: flex;
 @media screen and (max-width: 400px) {
 .h2-1 {
   
-  font-size: 30px;
+  font-size: 45px;
 }
 }
 
@@ -857,22 +864,27 @@ line-height: 2;
 }
 }
 
-
 @font-face {
-  font-family: 'MyFont';
-  src: url('../../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff2') format('woff2'),
-       url('../../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff') format('woff'),
-       url('../../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+font-family: 'MyFont';
+src: url('../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff2') format('woff2'),
+     url('../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff') format('woff'),
+     url('../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
 }
 
 body {
-  font-family: 'MyFont', sans-serif;
+font-family: 'MyFont', sans-serif;
 }
 
+
 @media (min-width: 1308px) {
-    .all_pragraph {
-          padding-top: 70px;
-    }
+  .all_pragraph {
+        padding-top: 70px;
+  }
+}
+
+
+.all_pragraph{
+font-family: open sans;
 }
