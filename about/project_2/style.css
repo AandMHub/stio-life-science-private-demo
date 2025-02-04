@@ -160,8 +160,9 @@
       .all_pragraph{
         padding: 10px 10px 10px 10px;
         margin-top: 810px;
-  margin-bottom: -169px;
-  margin-left: 115px;
+        margin-bottom: -169px;
+        margin-left: 115px;
+        font-size: 18px;
       }
 
       .all_pragraph p{
@@ -883,14 +884,7 @@ body {
     }
 }
 
-.contact-button {
-  position: fixed;
-  bottom: 30px;
-  right: 95px;
-  background: white;
-  padding: 4px 16px;
-    padding-top: 4px;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  padding-top: 10px;
+
+.all_pragraph{
+  font-family: open sans;
 }
