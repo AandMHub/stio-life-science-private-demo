@@ -838,8 +838,7 @@ body{
     }
   }
   
-  
- @media screen and (max-width: 426px) {
+@media screen and (max-width: 426px) {
   .img_three {
       top: -342px;
   }
