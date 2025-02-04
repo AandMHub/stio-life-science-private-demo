@@ -257,18 +257,9 @@ margin-left: 120px;
     }
 
 
-    @media screen and (max-width: 358px) {
-      .img_new{
-          margin-left: 34px;
-      }
-    }
 
-
-    @media screen and (max-width: 358px) {
-      .all_pragraphs {
-          margin-left: -675px;
-      }
-    }
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 * {
   padding: 0;
@@ -277,6 +268,7 @@ margin-left: 120px;
 
 body {
   background-color: #f5efee;
+  font-family: "Montserrat", sans-serif;
 }
 
 ul,li {
@@ -858,21 +850,65 @@ height: 300px;
 
 
 @font-face {
-  font-family: 'MyFont';
-  src: url('../../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff2') format('woff2'),
-       url('../../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff') format('woff'),
-       url('../../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+font-family: 'MyFont';
+src: url('../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff2') format('woff2'),
+     url('../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff') format('woff'),
+     url('../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
 }
 
 body {
-  font-family: 'MyFont', sans-serif;
+font-family: 'MyFont', sans-serif;
 }
 
-    @media (min-width: 1411px) {
-        .all_pragraphs p {
-              margin-left: 750px;
-        }
+  @media (min-width: 1411px) {
+      .all_pragraphs p {
+            margin-left: 750px;
+      }
+  }
+
+
+  /* new res */
+
+  .all_pragraphs p {
+    font-family: open sans;
+    font-family: 16px;
+  }
+
+
+  @media (max-width: 460px) {
+    .all_pragraphs p {
+      font-size: 16px;
+      margin-left: 678px;
+      width: 330px;
     }
+}
+
+@media (max-width: 404px) {
+  .all_pragraphs p {
+    width: 314px;
+  }
+}
+
+@media (max-width: 364px) {
+.all_pragraphs p {
+  width: 283px;
+  font-size: 15px;
+}
+}
+
+
+@media (max-width: 326px) {
+.all_pragraphs p {
+  width: 245px;
+}
+}
+
+
+@media (max-width: 302px) {
+.pairnt_all {
+  margin-left: -23px;
+}
+}
 
