@@ -1447,3 +1447,158 @@ top: -172px;
 body {
   font-family: 'MyFont', sans-serif;
 }
+
+
+@media screen and (max-width: 1300px) {
+  .all_p_pr1{
+    margin-top: 834px;
+  }
+}
+
+
+.all_p_pr1{
+  color: #9b9999;
+  padding-left: 30px;
+}
+.all_p_pr2{
+  color: #9b9999;
+  padding-left: 30px;
+}
+
+.img_1_{
+  width: 100%;
+  max-width: 92%;
+  padding-left: 30px;
+}
+
+
+.img_2_{
+  display: none;
+}
+
+@media screen and (max-width: 520px) {
+  .img_2_{
+    display: block;
+  }
+  
+}
+
+@media screen and (max-width: 520px) {
+  .img_1_{
+    display: none;
+  }
+  }
+
+
+  @media screen and (max-width: 509px) {
+    .img_2_{
+      margin-left: -26px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 479px) {
+    .img_2_{
+      margin-left: -11px;
+  width: 461px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 445px) {
+    .img_2_{
+      margin-left: -11px;
+  width: 461px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 419px) {
+    .img_2_{
+      margin-left: 7px;
+      width: 410px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 419px) {
+    .img_2_{
+      margin-left: -15px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 436px) {
+    .img_2_{
+      margin-left: -17px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 430px) {
+    .img_2_{
+      margin-left: -23px;
+      width: 450px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 412px) {
+    .img_2_{
+      margin-left: -20px;
+      width: 410px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 390px) {
+    .img_2_{
+      width: 380px;
+    }
+    
+  }
+
+
+
+  @media screen and (max-width: 388px) {
+    .img_2_{
+      margin-left: -6px;
+      width: 380px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 388px) {
+    .img_2_{
+      margin-left: -15px;
+      width: 380px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 388px) {
+    .img_2_{
+      margin-left: -20px;
+      width: 350px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 331px) {
+    .img_2_{
+      width: 330px;
+    }
+    
+  }
+
