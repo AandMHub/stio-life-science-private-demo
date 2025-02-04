@@ -146,7 +146,7 @@
 
 
     .container2 h3{
-      color: #9e9c9c;
+      color: #7a7a7a;
     }
 
     .container2 span{
@@ -209,29 +209,9 @@
 
 
 
-    @media screen and (max-width: 349px) {
-      .all_text{
-        left: 35px;
-        top: 44px;
-        font-size: 11px;
-      }
-    }
-
-
-    @media screen and (max-width: 349px) {
-      .container2 img{
-        left: 130.9px;
-      }
-    }
-
-
     .container-value{
       margin-top: 80px;
     }
-
-
-
-    
 
 
 /*=============== GOOGLE FONTS ===============*/
@@ -814,14 +794,49 @@ body {
   font-family: 'MyFont', sans-serif;
 }
 
-.contact-button {
-  position: fixed;
-  bottom: 30px;
-  right: 95px;
-  background: white;
-  padding: 4px 16px;
-    padding-top: 4px;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  padding-top: 10px;
+@media screen and (max-width: 414px) {
+  .all_text{
+    top: 25px;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .all_text{
+    top: 26px;
+  }
+}
+
+
+@media screen and (max-width: 401px) {
+  .container2{
+    margin-left: 51px;
+  }
+}
+
+
+.all_text{
+  padding-bottom: 34px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 396px) {
+  .container2{
+    margin-left: -14px;
+  }
+}
+
+
+@media screen and (max-width: 396px) {
+  .all_text{
+    top: 30px;
+  left: 75px;
+  }
+}
+
+
+
+@media screen and (max-width: 331px) {
+  .container2 img{
+    margin-left: -117px;
+  }
 }
