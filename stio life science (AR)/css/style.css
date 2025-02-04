@@ -1159,4 +1159,8 @@ body {
     transform: translateY(-12px) rotate(-45deg);
 }
 
-
+  @media  (max-width: 590px) {
+      .head-sec{
+        margin-left: 35px;
+      }
+  }
