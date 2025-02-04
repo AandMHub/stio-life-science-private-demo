@@ -948,3 +948,10 @@ font-family: open sans;
     display: none;
   }
 }
+
+
+@media screen and (max-width: 399px) {
+  .text {
+    margin-top: 45px;
+  }
+}
