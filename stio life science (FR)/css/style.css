@@ -1175,3 +1175,24 @@ body {
         margin-left: 35px;
       }
   }
+
+.phon-img{
+  display: block;
+} 
+
+.phon-img1{
+  display: none;
+}
+
+@media  (max-width: 897px) {
+.phon-img1{
+  display: block;
+}
+}
+
+@media  (max-width: 897px) {
+
+.phon-img{
+  display: none;
+}
+}
