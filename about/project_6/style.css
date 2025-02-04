@@ -875,3 +875,16 @@ body {
     display: none;
   }
 }
+
+
+@media screen and (max-width: 732px) {
+  .img_top {
+    top: -593px;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .img_top {
+    top: -542px;
+  }
+}
