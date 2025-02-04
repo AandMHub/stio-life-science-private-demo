@@ -146,7 +146,7 @@ margin-bottom: 100px;
 
 
   .container2 h3{
-    color: #9e9c9c;
+    color: #7a7a7a;
   }
 
   .container2 span{
@@ -209,31 +209,13 @@ margin-bottom: 100px;
 
 
 
-  @media screen and (max-width: 349px) {
-    .all_text{
-      left: 35px;
-      top: 44px;
-      font-size: 11px;
-    }
-  }
-
-
-  @media screen and (max-width: 349px) {
-    .container2 img{
-      left: 130.9px;
-    }
-  }
-
-
   .container-value{
     margin-top: 80px;
   }
 
 
-
-  
-
-
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 * {
   padding: 0;
@@ -242,6 +224,7 @@ margin-bottom: 100px;
 
 body {
   background-color: #f5efee;
+  font-family: "Montserrat", sans-serif;
 }
 
 ul,li {
@@ -799,15 +782,61 @@ display: flex;
 
 
 @font-face {
-  font-family: 'MyFont';
-  src: url('../../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff2') format('woff2'),
-       url('../../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff') format('woff'),
-       url('../../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+font-family: 'MyFont';
+src: url('../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff2') format('woff2'),
+     url('../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff') format('woff'),
+     url('../../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
 }
 
 body {
-  font-family: 'MyFont', sans-serif;
+font-family: 'MyFont', sans-serif;
 }
 
+@media screen and (max-width: 414px) {
+.all_text{
+  top: 25px;
+}
+}
+
+@media screen and (max-width: 401px) {
+.all_text{
+  top: 26px;
+}
+}
+
+
+@media screen and (max-width: 401px) {
+.container2{
+  margin-left: 51px;
+}
+}
+
+
+.all_text{
+padding-bottom: 34px;
+line-height: 1.5;
+}
+
+@media screen and (max-width: 396px) {
+.container2{
+  margin-left: -14px;
+}
+}
+
+
+@media screen and (max-width: 396px) {
+.all_text{
+  top: 30px;
+left: 75px;
+}
+}
+
+
+
+@media screen and (max-width: 331px) {
+.container2 img{
+  margin-left: -117px;
+}
+}
