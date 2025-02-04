@@ -927,7 +927,7 @@ transition: all 0.5s ease;
 }
 
 .support-left{
-  margin-left: 80px;
+  margin-top: 30px;
 }
 
 .support-left div{
@@ -949,7 +949,6 @@ transition: all 0.5s ease;
 
 .support-right{
   line-height: 7rem;
-  margin-right: 152px;
 }
 
 .support-right h3{
@@ -958,7 +957,6 @@ transition: all 0.5s ease;
 
 .support-right button{
   margin-right: 15px;
-  font-size: 24px;
 }
 
 .about-us-container {
