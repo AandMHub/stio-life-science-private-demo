@@ -954,3 +954,42 @@ body {
 .menu-icon.active .bar:nth-child(3) {
     transform: translateY(-12px) rotate(-45deg);
 }
+
+@media screen and (max-width: 387px) {
+.menu-icon{
+    left: -15px;
+}
+}
+
+
+@media screen and (max-width: 371px) {
+.menu-icon{
+      left: -27px;
+}
+}
+
+@media screen and (max-width: 344px) {
+.menu-icon{
+       left: -35px;
+}
+}
+
+@media screen and (max-width: 340px) {
+.menu-icon{
+         left: -48px;
+}
+}
+
+@media screen and (max-width: 326px) {
+.menu-icon{
+           left: -57px;
+}
+}
+
+
+@media screen and (max-width: 316px) {
+.menu-icon{
+             left: -66px;
+}
+}
+
