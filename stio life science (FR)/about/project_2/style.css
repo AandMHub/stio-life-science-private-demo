@@ -918,3 +918,10 @@ font-family: open sans;
 .menu-icon.active .bar:nth-child(3) {
     transform: translateY(-12px) rotate(-45deg);
 }
+
+
+@media (min-width: 400px) {
+  .text {
+          margin-top: 45px;
+  }
+}
