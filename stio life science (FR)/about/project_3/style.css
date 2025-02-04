@@ -174,9 +174,11 @@ margin-left: 120px;
     .all_pragraphs p {
       letter-spacing: -.5px;
       margin-left: 698px;
-margin-top: -153px;
-font-size: 20px;
-color: #7b7b7b;
+      margin-top: -153px;
+      font-size: 20px;
+      color: #7b7b7b;
+      margin-top: -175px;
+      font-family: open sans;
     }
 
 
@@ -903,3 +905,34 @@ body {
         }
     }
 
+
+
+     /* new */
+     @media (max-width: 459px) {
+      .all_pragraphs p {
+        margin-left: 667px;
+        padding: 11px 4px 72px 6px;
+        font-size: 16px;
+      }
+  }
+
+
+  @media (max-width: 359px) {
+    .all_pragraphs p {
+      margin-left: 688px;
+    }
+}
+
+
+@media (max-width: 359px) {
+  .all_pragraphs p {
+    margin-left: 725px;
+  }
+}
+
+
+@media (max-width: 315px) {
+  .all_pragraphs p {
+    margin-left: 700px;
+  }
+}
