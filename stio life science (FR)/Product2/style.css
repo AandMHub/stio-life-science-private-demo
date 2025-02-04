@@ -845,24 +845,24 @@ body{
     }
   }
   
-  @media screen and (max-width: 426px) {
-    .img_three {
-      top: -381px;
-    }
+ @media screen and (max-width: 426px) {
+  .img_three {
+      top: -342px;
   }
-  
-  @media screen and (max-width: 382px) {
-    .img_three {
-      top: -380px;
-    }
+}
+
+@media screen and (max-width: 382px) {
+  .img_three {
+    top: -380px;
   }
-  
-  
-  @media screen and (max-width: 368px) {
-    .img_three {
-      top: -335px;
-    }
+}
+
+
+@media screen and (max-width: 368px) {
+  .img_three {
+        top: -279px;
   }
+}
   
   @media screen and (max-width: 324px) {
     .img_three {
