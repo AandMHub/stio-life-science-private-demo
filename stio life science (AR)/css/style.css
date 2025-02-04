@@ -400,6 +400,7 @@
 
 .card-content {
     padding: 15px;
+      text-align: right;
 }
 
 .card-content h3 a {
