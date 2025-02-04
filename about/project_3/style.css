@@ -162,8 +162,8 @@
 
       .img_new{
         width: 40%;
-  margin-top: 267px;
-  margin-left: 120px;
+        margin-top: 267px;
+        margin-left: 120px;
       }
 
 
@@ -174,9 +174,11 @@
       .all_pragraphs p {
         letter-spacing: -.5px;
         margin-left: 698px;
-  margin-top: -153px;
-  font-size: 20px;
-  color: #7b7b7b;
+        margin-top: -153px;
+        font-size: 20px;
+        color: #7b7b7b;
+        margin-top: -175px;
+        font-family: open sans;
       }
 
 
@@ -909,15 +911,34 @@ body {
         }
     }
 
-.contact-button {
-  position: fixed;
-  bottom: 30px;
-  right: 95px;
-  background: white;
-  padding: 4px 16px;
-    padding-top: 4px;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  padding-top: 10px;
+
+
+    /* new */
+    @media (max-width: 459px) {
+      .all_pragraphs p {
+        margin-left: 667px;
+        padding: 11px 4px 72px 6px;
+        font-size: 16px;
+      }
+  }
+
+
+  @media (max-width: 359px) {
+    .all_pragraphs p {
+      margin-left: 688px;
+    }
 }
 
+
+@media (max-width: 359px) {
+  .all_pragraphs p {
+    margin-left: 725px;
+  }
+}
+
+
+@media (max-width: 315px) {
+  .all_pragraphs p {
+    margin-left: 700px;
+  }
+}
