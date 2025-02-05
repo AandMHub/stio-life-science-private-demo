@@ -737,18 +737,29 @@ transition: all 0.5s ease;
 .contact-options.active {
   display: flex;
 }
-@font-face {
-  font-family: 'MyFont';
-  src: url('../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff2') format('woff2'),
-       url('../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.woff') format('woff'),
-       url('../fonts/AnjaliOldLipi/AnjaliOldLipi-Regular.ttf') format('truetype');
+
+        @font-face {
+  font-family: 'MyFont1';
+  src: url('../fonts/OpenSans-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
-body {
-  font-family: 'MyFont', sans-serif;
+@font-face {
+  font-family: "MyFont2";
+  src: url('../fonts/Rotis-SansPro.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
+
+body{
+  font-family: 'MyFont1', sans-serif;
+}
+
+header{
+  font-family: "MyFont2", sans-serif;
+}
+        
           .menu-icon {
     width: 40px;
     height: 30px;
