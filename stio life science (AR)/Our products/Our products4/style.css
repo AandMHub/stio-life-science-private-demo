@@ -1772,3 +1772,26 @@ body{
 header{
   font-family: "MyFont2", sans-serif;
 }
+
+.for-small{
+  display: none;
+}
+
+@media  (max-width: 1117px) {
+  .for-small{
+    display: block;
+    color: #a19999;
+    position: fixed;
+    left: 170px;
+    top: 9px;
+  }
+  .nav__link-head:hover{
+    background-color: #ffffff00;
+  }
+}
+
+@media  (max-width: 1117px) {
+  .for-big{
+    display: none;
+  }
+}
