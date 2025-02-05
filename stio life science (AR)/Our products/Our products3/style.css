@@ -1667,3 +1667,58 @@ header{
              left: -20px;
   }
 }
+
+
+header{
+  direction: rtl;
+}
+
+@media screen and (min-width: 1118px) {
+  
+  header{
+    white-space: nowrap;
+  }
+
+  .dropdown__subitem .dropdown__link {
+    padding-inline: 0rem;
+  }
+
+  .dropdown__link, .dropdown__sublink {
+    padding-inline: 0rem 0rem;
+  }  
+
+.dropdown__link, .dropdown__sublink {
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.dropdown__link, .dropdown__sublink {
+  padding: 1rem 0.3rem 1rem 0.3rem;
+}
+}
+@media screen and (max-width: 890px) {
+
+.submit-responsive {
+  margin-right: 38px;
+}
+}  text-decoration: none;
+  color: white;
+  display: block ruby;
+  text-align: center;
+  margin-top: 262px;
+  margin-left: -74px;
+}
+
+.point{
+  color: white;
+display: block ruby;
+text-align: center;
+margin-top: -40px;
+font-size: 30px;
+margin-left: -3px;
+}
+
+
+.link2{
+  text-decoration: none;
+Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
+
