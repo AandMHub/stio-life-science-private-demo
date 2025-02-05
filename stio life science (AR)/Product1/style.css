@@ -944,3 +944,17 @@ header{
     display: none;
   }
 }
+
+
+@media  (max-width: 512px) {
+  .img_three{
+    top: -330px;
+  }
+}
+
+
+@media  (max-width: 368px) {
+  .img_three{
+    top: -274px;
+  }
+}
