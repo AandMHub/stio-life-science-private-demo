@@ -188,6 +188,8 @@ margin-bottom: 100px;
     .all_text{
       position: relative;
       top: 73px;
+      direction: rtl;
+      right: 53px;
     }
   }
 
@@ -815,7 +817,6 @@ line-height: 1.5;
 @media screen and (max-width: 396px) {
 .all_text{
   top: 30px;
-left: 75px;
 }
 }
 
@@ -857,17 +858,6 @@ left: 75px;
     transform: translateY(-12px) rotate(-45deg);
 }
 
-@media screen and (max-width: 401px) {
-  .menu-icon{
-      left: -51px;
-  }
-}
-
-@media screen and (max-width: 396px) {
-  .menu-icon{
-        left: -69px;
-  }
-}
 
 .for-small{
   display: none;
@@ -878,7 +868,7 @@ left: 75px;
     display: block;
     color: #a19999;
     position: fixed;
-    left: 170px;
+    left: 80px;
     top: 9px;
   }
   .nav__link-head:hover{
