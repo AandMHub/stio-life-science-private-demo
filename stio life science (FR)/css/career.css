@@ -782,21 +782,6 @@ transition: all 0.5s ease;
 
 
 
-      @media screen and (max-width: 436px) {
-        .text {
-          font-size: 18px;
-        }
-      }
-
-
-
-      @media screen and (max-width: 436px) {
-        .h2-1 {
-          margin-left: 8px;
-          margin-bottom: -260.08px;
-          font-size: 30px;
-        }
-      }
 
 
       @media screen and (max-width: 436px) {
