@@ -1148,12 +1148,6 @@ transition: all 0.5s ease;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .h2-1 {
-    margin-top: -205.08px;
-  }
-}
-
 
 
 @media screen and (max-width: 400px) {
@@ -1276,4 +1270,11 @@ header{
 .submit-responsive {
   margin-right: 38px;
 }
+}
+.h2-1 {
+  margin-bottom: -249.08px;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  margin-top: -493.1px;
 }
