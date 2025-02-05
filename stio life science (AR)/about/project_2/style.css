@@ -19,7 +19,7 @@ color: white;
   display: block ruby;
   text-align: center;
   margin-top: 262px;
-  margin-left: -74px;
+
 }
 
 .point{
@@ -755,6 +755,7 @@ display: flex;
 @media screen and (max-width: 460px) {
 .text {
   font-size: 13px;
+    margin-top: 57px;
 }
 }
 
