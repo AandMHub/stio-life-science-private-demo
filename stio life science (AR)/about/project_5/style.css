@@ -195,12 +195,6 @@ margin-bottom: 100px;
 
 
 
-  @media screen and (max-width: 401px) {
-    .all_text{
-      left: 58px;
-    }
-  }
-
 
   @media screen and (max-width: 401px) {
     .container2 img{
