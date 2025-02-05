@@ -952,12 +952,10 @@ transition: all 0.5s ease;
 }
 
 .support-right h3{
-  font-size: 28px;
+  font-size: 20px;
 }
 
-.support-right button{
-  margin-right: 15px;
-}
+
 
 .about-us-container {
   width: 100%;
