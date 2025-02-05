@@ -5,36 +5,359 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="edit.css">
     <title>Ropivacaine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div>
-        <img class="img_Read" src="img/Ropivacaine_HCl_Monohydrate_Recolored_1600x900-1-1024x576.png" alt="">
-        <div class="text_read">
-        <h2 class="h2_tit">Ropivacaine Hydrochloride Monohydrate : Un aperçu</h2>
-        <h3 class="h3_tit">Introduction</h3>
-        <p>Le Ropivacaine Hydrochloride Monohydrate est un anesthésique local à longue durée d'action appartenant au groupe des amides. Il est principalement utilisé pour l'anesthésie régionale et</p>
-        <p>l'analgésie, offrant une gestion efficace de la douleur dans divers contextes médicaux, y compris la chirurgie, l'obstétrique et la gestion de la douleur chronique. Son profil de sécurité favorable</p>
-        <p>et son efficacité en font un choix privilégié parmi les anesthésistes.</p>
-        <h3 class="h3_tit">Composition chimique et propriétés</h3>
-        <p>Le Ropivacaine Hydrochloride Monohydrate est une poudre cristalline blanche soluble dans l'eau. Sa formule chimique est <strong><b>C₁₇H₂₆N₂O,</b></strong> et son poids moléculaire est</p>
-        <p>328,9 g/mol. En tant qu'anesthésique local de type amide, il agit en bloquant les canaux sodiques dans les fibres nerveuses, inhibant ainsi la génération et la conduction des impulsions nerveuses.</p>
-        <p>Ce mécanisme est fondamental pour son efficacité dans la fourniture d'un soulagement localisé de la douleur.</p>
-        <h3 class="h3_tit">Applications cliniques</h3>
-        <p><strong><b>• Anesthésie régionale :</b></strong> Le Ropivacaine est largement utilisé pour les blocs épiduraux et nerveux périphériques. Il est privilégié dans les procédures nécessitant une analgésie prolongée, telles que les césariennes et les chirurgies orthopédiques.</p>
-        <p><strong><b>• Gestion de la douleur postopératoire :</b></strong> Le médicament est efficace pour gérer la douleur postopératoire, réduisant ainsi le besoin d'opioïdes systémiques et minimisant les effets secondaires tels que la nausée et la sédation.</p>
-        <p><strong><b>• Gestion de la douleur chronique :</b></strong> Le Ropivacaine est utilisé pour gérer les douleurs chroniques par des perfusions continues ou des blocs nerveux, améliorant ainsi la qualité de vie des patients.</p>
-        <h3 class="h3_tit">Posologie et administration</h3>
-        <p>Le Ropivacaine peut être administré par diverses voies, y compris intraveineuse, épidurale et pour les blocs nerveux périphériques. La posologie dépend de la procédure spécifique, du niveau d'anesthésie souhaité et de l'état de santé du patient.</p>
-        <p>Les concentrations typiques pour l'administration épidurale varient de 0,2% à 0,75%, tandis que les blocs nerveux périphériques peuvent utiliser des concentrations entre 0,5% et 1%.</p>
-        <h3 class="h3_tit">Sécurité et effets secondaires</h3>
-        <p>Bien que le Ropivacaine Hydrochloride Monohydrate soit généralement bien toléré, il peut provoquer des effets secondaires, qui peuvent inclure :</p>
-        <p><strong><b>• Réactions locales :</b></strong> Douleur au site d'injection, hématome ou infection.</p>
-        <p><strong><b>• Toxicité systémique :</b></strong> Des doses élevées ou une injection intravasculaire accidentelle peuvent entraîner une toxicité systémique, se manifestant par des symptômes du SNC (par exemple, acouphènes, convulsions) ou des problèmes cardiovasculaires (par exemple, hypotension, arythmies).</p>
-        <p><strong><b>• Réactions allergiques :</b></strong> Problèmes cardiovasculaires (par exemple, hypotension, arythmies).</p>
-        <p>Pour réduire les risques, les prestataires de soins doivent suivre les lignes directrices recommandées pour le dosage et surveiller les patients de près pendant et après l'administration.</p>
-        <hr>
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <img src="imgs/logo.png" alt="" class="logo">
+        
+                    <div class="nav__toggle" id="nav-toggle">
+                          <div class="menu-icon" onclick="toggleMenu()">
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                      </div>
+                    </div>
+                    <li class="dropdown__item for-small" style="color: #a19999;">
+                    <div class="nav__link nav__link-head" style="color: #a19999;">
+                        Français <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+        
+                    <ul class="dropdown__menu">
+                        <li>
+                            <a href="../../../stio life science (AR)/contact-us.html" class="dropdown__link">
+                                Arabic
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../../contact-us.html" class="dropdown__link">
+                              English
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                </div>
+        
+               
+        
+                <!--=============== NAV MENU =============== -->
+        
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                         <li class="dropdown__item for-big" style="color: #a19999;">
+                    <div class="nav__link" style="color: #a19999;">
+                        Français <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+        
+                    <ul class="dropdown__menu">
+                        <li>
+                            <a href="../../../stio life science (AR)/contact-us.html" class="dropdown__link">
+                                Arabic
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../../contact-us.html" class="dropdown__link">
+                              English
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                        <li><a href="index.html" class="nav__link">Accueil</a></li>
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                À propos de nous <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+        
+                            <ul class="dropdown__menu" style="  margin-right: -66px;">
+                                <li>
+                                    <a href="../../about/project_1/Board.html" class="dropdown__link">
+                                        <i class="ri-user-line"></i> Conseil
+                                    </a>
+                                </li>
+        
+                                <li>
+                                    <a href="../../about/project_2/Who We Are.html" class="dropdown__link">
+                                        <i class="ri-user-line"></i> Qui nous sommes؟
+                                    </a>
+                                </li>
+        
+                                <li>
+                                    <a href="../../about/project_3/Mission.html" class="dropdown__link">
+                                        <i class="ri-user-line"></i> Mission
+                                    </a>
+                                </li>
+        
+                                <li>
+                                    <a href="../../about/project_4/Vision.html" class="dropdown__link">
+                                        <i class="ri-user-line"></i> Vision
+                                    </a>
+                                </li>
+        
+                                <li>
+                                    <a href="../../about/project_5/Values.html" class="dropdown__link">
+                                        <i class="ri-lock-line"></i> Valeurs
+                                    </a>
+                                </li>
+        
+                                <li>
+                                    <a href="../../about/project_6/Partners.html" class="dropdown__link">
+                                        <i class="ri-message-3-line"></i> Partenaires
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Nos Produits <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+        
+                            <ul class="dropdown__menu" style="  margin-right: -32px;">
+                                <!--=============== DROPDOWN SUBMENU ===============-->
+                                <li class="dropdown__subitem">
+                                    <div class="dropdown__link">
+                                        <i class="ri-bar-chart-line"></i> Classe thérapeutique <i class="ri-add-line dropdown__add"></i>
+                                    </div>
+        
+                                    <ul class="dropdown__submenu">
+                                        <li>
+                                            <a href="../../Our products/Our products1/Our prodact1.html" class="dropdown__sublink">
+                                                <i class="ri-file-list-line"></i> Doxapram Hydrochloride
+                                            </a>
+                                        </li>
+        
+                                        <li>
+                                            <a href="../../Our products/Our products2/Our prodact1.html" class="dropdown__sublink">
+                                                <i class="ri-file-list-line"></i> Dexmedetomidine Hydrochloride
+                                            </a>
+                                        </li>
+        
+                                        <li>
+                                            <a href="../../Our products/Our products3/Our prodact1.html" class="dropdown__sublink">
+                                                <i class="ri-file-list-line"></i> Chlorhydrate de lévobupivacaïne
+                                            </a>
+                                        </li>
+        
+                                        <li>
+                                            <a href="../../Our products/Our products4/Our prodact1.html" class="dropdown__sublink">
+                                                <i class="ri-cash-line"></i> Ropivacaine Hydrochloride
+                                            </a>
+                                        </li>
+        
+                                        <li>
+                                            <a href="../../Our products/Our products5/Our prodact1.html" class="dropdown__sublink">
+                                                <i class="ri-refund-2-line"></i> Chlorhydrate de tirofiban monohydraté
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="nav__link"></a></li>
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Pipeline <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+        
+                            <ul class="dropdown__menu" style="  margin-right: -81px;">
+                                <!--=============== DROPDOWN SUBMENU ===============-->
+                                <li class="dropdown__subitem">
+                                    <div class="dropdown__link">
+                                        <i class="ri-bar-chart-line"></i> Classe thérapeutique <i class="ri-add-line dropdown__add"></i>
+                                    </div>
+        
+                                    <ul class="dropdown__submenu">
+                                        <li>
+                                            <a href="../../Product1/Product1.html" class="dropdown__sublink">
+                                                <i class="ri-file-list-line"></i> Produit 1
+                                            </a>
+                                        </li>
+        
+                                        <li>
+                                            <a href="../../Product2/Product2.html" class="dropdown__sublink">
+                                                <i class="ri-file-list-line"></i> Produit 2
+                                            </a>
+                                        </li>
+        
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="../../career.html" class="nav__link">Carrière</a></li>
+                        <li><a href="../News_1/News.html" class="nav__link">Actualités</a></li>
+                        <li><a href="../../contact-us.html" class="nav__link" >Contactez-nous</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+    
+    <div class="structured-box">
+        <div class="top-banner">
+            <img src="img/Ropivacaine_HCl_Monohydrate_Recolored_1600x900-1-1024x576.png" alt="Chemical Structure">
+        </div>
+    
+        <h1 class="big-title">Ropivacaïne Chlorhydrate Monohydraté : Aperçu</h1>
+    
+        <h2 class="section-title">Introduction</h2>
+        <p class="info-text">
+            La ropivacaïne chlorhydrate monohydraté est un anesthésique local à longue durée d’action appartenant au groupe des amides. Elle est principalement utilisée pour l’anesthésie régionale et l’analgésie, offrant une gestion efficace de la douleur dans divers contextes médicaux, y compris la chirurgie, l’obstétrique et la prise en charge de la douleur chronique. Son profil de sécurité favorable et son efficacité en font un choix privilégié parmi les anesthésistes.    </p>
+    
+        <h2 class="section-title">Composition chimique et propriétés</h2>
+        <p class="info-text">
+            La ropivacaïne chlorhydrate monohydraté est une poudre cristalline blanche soluble dans l’eau. Sa formule chimique est C₁₇H₂₆N₂O, et son poids moléculaire est de 328,9 g/mol. En tant qu’anesthésique local de type amide, elle agit en bloquant les canaux sodiques dans les fibres nerveuses, inhibant ainsi la génération et la conduction des impulsions nerveuses. Ce mécanisme est fondamental pour son efficacité dans le soulagement localisé de la douleur.    </p>
+    
+        <h2 class="section-title">Applications cliniques</h2>
+        <ul class="bullet-list">
+            <li class="bullet-item"><span class="bold-text">Anesthésie régionale :</span> La ropivacaïne est largement utilisée pour les blocs nerveux périduraux et périphériques. Elle est privilégiée dans les procédures nécessitant une analgésie prolongée, comme les césariennes et les chirurgies orthopédiques.</li>
+            <li class="bullet-item"><span class="bold-text">Gestion de la douleur postopératoire :</span>Le médicament est efficace pour gérer la douleur postopératoire, réduisant le besoin d’opioïdes systémiques et minimisant les effets secondaires tels que les nausées et la sédation.</li>
+            <li class="bullet-item"><span class="bold-text">Gestion de la douleur chronique :</span> La ropivacaïne est utilisée dans le traitement des douleurs chroniques à travers des perfusions continues ou des blocs nerveux, améliorant ainsi la qualité de vie des patients.</li>
+        </ul>
+    
+        <h2 class="section-title">Posologie et administration</h2>
+        <p class="info-text">
+            La ropivacaïne peut être administrée par diverses voies, y compris intraveineuse, péridurale et bloc nerveux périphérique. La posologie dépend de la procédure spécifique, du niveau d’anesthésie souhaité et de l’état de santé du patient. Les concentrations typiques pour l’administration péridurale varient de 0,2 % à 0,75 %, tandis que pour les blocs nerveux périphériques, les concentrations peuvent aller de 0,5 % à 1 %.    </p>
+    
+        <h2 class="section-title">Sécurité et effets secondaires</h2>
+        <p class="info-text">
+            Bien que la ropivacaïne chlorhydrate monohydraté soit généralement bien tolérée, elle peut entraîner des effets secondaires, tels que :    </p>
+        <ul class="bullet-list">
+            <li class="bullet-item"><span class="bold-text">Réactions locales :</span> Douleur au site d’injection, hématome ou infection.
+            </li>
+            <li class="bullet-item"><span class="bold-text">Toxicité systémique :</span> Des doses élevées ou une injection intravasculaire accidentelle peuvent entraîner une toxicité systémique, se manifestant par des symptômes du système nerveux central (par exemple, tinnitus, convulsions) ou des problèmes cardiovasculaires (par exemple, hypotension, arythmies).</li>
+            <li class="bullet-item"><span class="bold-text">Réactions allergiques :</span> Bien que rares, certains patients peuvent présenter une hypersensibilité à la ropivacaïne.</li>
+        </ul>
+    
+        <p class="info-text">
+            Pour réduire les risques, les professionnels de santé doivent suivre les directives recommandées pour la posologie et surveiller les patients de près pendant et après l’administration.    </p>
+    
     </div>
-    </div>
+    
+    
+    
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-section">
+                <img src="img/logo-footer.png" alt="" style="width: 120px;"><br>
+                <p>We Plan For a Better Tomorrow</p>
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+            </div>
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <ul>
+                  <li><a href="../../index.html" >Home</a></li>
+                  <li><a href="../../career.html">Career</a></li>
+                  <li><a href="../../News_1/News.html" class="active">News</a></li>
+                  <li><a href="../../contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>STIO Life Science</h3>
+                <div style="display: flex;">
+                <span class="elementor-icon-list-icon">
+                <svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker-alt" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>									</span>
+                <p>33 Nazih Khalifa,Heliopolis,Cairo,Egypt</p><br>
+            </div>
+            <div style="display: flex;">
+                <span class="elementor-icon-list-icon">
+                    <i aria-hidden="true" class="icon icon-phone-handset"></i>									</span>
+                <p>+ 02 24500837</p><br>
+            </div>
+            <div style="display: flex;">
+                <span class="elementor-icon-list-icon">
+                    <i aria-hidden="true" class="icon icon-phone-handset"></i>									</span>
+                <p>info@stiolifescience.com</p><br>
+            </div>
+            </div>
+            <div class="footer-section">
+                <h3>Subscribe now</h3>
+                <p>
+                    Don’t miss our future updates! Subscribe today!
+                    </p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Your email here" required>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+         <p>© 2025 All rights reserved. Developed by <a href="https://web.whatsapp.com/send?phone=+201271109594&text=">A&M</a></p>
+      </div>
+      </footer>
+      
+      
+      
+      
+      <div class="floating-button" id="mainButton">
+        <i class="fa-solid fa-message"></i>
+      </div>
+      
+     
+     <div class="contact-options" id="contactOptions">
+     <div class="option">
+      <a href="tel:+2024500837"><i style="color: #fff;background-color: #3b9358;padding: 17px;border-radius: 40px;" class="fa-solid fa-phone"></i></a>
+     </div>
+     <div class="option">
+      <a href="https://web.whatsapp.com/send?phone=201005139531&text="><i style="color: #fff;background-color: #3b9358;padding: 17px;border-radius: 40px;" class="fa-brands fa-whatsapp"></i></a>
+     </div>
+     <div class="close-button" id="closeButton">
+      <i class="fa-solid fa-xmark"></i>
+     </div>
+     </div>
+     <div style="position: fixed;bottom: 30px;right: 95px;background: white;padding: 4px 16px;padding-top: 4px;border-radius: 10px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);padding-top: 10px;">
+     Contact us
+     </div>
+    
+     <script>
+    
+    
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("Page Loaded Successfully!");
+        });
+        
+        /*=============== SHOW MENU ===============*/
+        const showMenu = (toggleId, navId) =>{
+            const toggle = document.getElementById(toggleId),
+                  nav = document.getElementById(navId)
+         
+            toggle.addEventListener('click', () =>{
+                // Add show-menu class to nav menu
+                nav.classList.toggle('show-menu')
+         
+                // Add show-icon to show and hide the menu icon
+                toggle.classList.toggle('show-icon')
+            })
+         }
+         
+         showMenu('nav-toggle','nav-menu')
+        
+        
+        
+         document.addEventListener("DOMContentLoaded", function () {
+            const mainButton = document.getElementById("mainButton");
+            const contactOptions = document.getElementById("contactOptions");
+            const closeButton = document.getElementById("closeButton");
+        
+            mainButton.addEventListener("click", function () {
+                contactOptions.classList.add("active");
+                mainButton.style.display = "none"; // إخفاء الزر الأصلي
+            });
+        
+            closeButton.addEventListener("click", function () {
+                contactOptions.classList.remove("active");
+                mainButton.style.display = "flex"; // إعادة إظهار الزر
+            });
+        });
+                function toggleMenu() {
+            document.querySelector(".menu-icon").classList.toggle("active");
+        }
+            </script>
     
 </body>
 </html>
