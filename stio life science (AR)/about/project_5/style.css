@@ -909,3 +909,37 @@ left: 75px;
     display: none;
   }
 }
+
+
+header{
+  direction: rtl;
+}
+
+@media screen and (min-width: 1118px) {
+  
+  header{
+    white-space: nowrap;
+  }
+
+  .dropdown__subitem .dropdown__link {
+    padding-inline: 0rem;
+  }
+
+  .dropdown__link, .dropdown__sublink {
+    padding-inline: 0rem 0rem;
+  }  
+
+.dropdown__link, .dropdown__sublink {
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.dropdown__link, .dropdown__sublink {
+  padding: 1rem 0.3rem 1rem 0.3rem;
+}
+}
+@media screen and (max-width: 890px) {
+
+.submit-responsive {
+  margin-right: 38px;
+}
+}
