@@ -1144,17 +1144,21 @@ transition: all 0.5s ease;
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .img_top {
     height: 247px;
   }
 }
 
+@media screen and (max-width: 450px) {
+  .img_top {
+    margin-top: -13px;
+  }
+}
 
-@media screen and (max-width: 400px) {
-  .h2-1 {
-    margin-top: -305.08px;
-    font-size: 45px;
+@media screen and (max-width: 450px) {
+  .text {
+    margin-top: 313px;
   }
 }
 
