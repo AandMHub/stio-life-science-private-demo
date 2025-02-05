@@ -833,3 +833,17 @@ header{
   margin-right: 38px;
 }
 }
+
+
+@media screen and (max-width: 450px) {
+  .img_top {
+    height: 247px;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .text {
+    margin-top: 164px;
+  }
+}
