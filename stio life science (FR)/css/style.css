@@ -834,6 +834,7 @@ transition: all 0.5s ease;
   cursor: pointer;
   font-size: 30px;
   color: #3b9358;
+      z-index: 999;
 }
 
 .floating-button img {
