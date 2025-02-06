@@ -150,6 +150,7 @@ margin-top: -44px;
     z-index: 100;
     background-color: #fff;
     padding-bottom: 30px;
+    z-index: 9999;
   }
 
   .header .logo{
