@@ -648,10 +648,6 @@ display: none;
 }
 
 
-header{
-direction: rtl;
-}
-
 @media screen and (min-width: 1118px) {
 
 header{
