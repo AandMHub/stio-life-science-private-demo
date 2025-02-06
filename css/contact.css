@@ -624,6 +624,7 @@ button {
   /*=============== HEADER ===============*/
   .header {
     width: 100%;
+      z-index: 9999;
   }
 
   .header .logo{
