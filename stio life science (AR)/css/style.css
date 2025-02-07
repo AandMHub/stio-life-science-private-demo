@@ -653,11 +653,10 @@
   flex-direction: column;
   gap: 15px;
   min-width: 300px;
-  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .container-contact label {
-  text-align: left;
   font-weight: bold;
 }
 
@@ -977,6 +976,7 @@ transition: all 0.5s ease;
 .about-us-container {
   width: 100%;
   padding: 50px 0;
+  direction: rtl;
 }
 
 .about-us {
@@ -993,9 +993,15 @@ transition: all 0.5s ease;
   border-bottom-width: 2px;
   border-bottom-style: solid;
   width: 10%;
-  margin-left: 85px;
-  padding-bottom: 20px;
+  padding-bottom: 20px; 
   border-color: #3b9358;
+  margin-right: 100px;
+}
+
+@media (max-width: 575px) {
+    .about-us-container h2{
+         width: 25%;
+    }
 }
 
 .products h1{
@@ -1028,6 +1034,13 @@ transition: all 0.5s ease;
   margin-bottom: 40px;
 }
 
+@media (max-width: 575px) {
+    .container-contact h2{
+      width: 30%;
+    }
+}
+
+
 
 .container-contact {
   width: 90%;
@@ -1037,6 +1050,7 @@ transition: all 0.5s ease;
   padding: 20px;
   box-shadow: 0 0 0 0;
   border-radius: 8px;
+   direction: rtl;
 }
 
 .container-contact input, textarea {
