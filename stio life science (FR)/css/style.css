@@ -1006,10 +1006,16 @@ transition: all 0.5s ease;
   padding-left: 0px;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  width: 10%;
+  width: 16%;
   margin-left: 85px;
   padding-bottom: 20px;
   border-color: #3b9358;
+}
+
+@media screen and (max-width: 675px) {
+    .about-us-container h2{
+          width: 50%;
+    }
 }
 
 .products h1{
