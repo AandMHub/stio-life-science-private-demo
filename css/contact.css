@@ -1367,3 +1367,17 @@ body{
 header{
   font-family: "MyFont2", sans-serif;
 }
+
+
+@media  (max-width: 400px) {
+  .text{
+      margin-top: 223px;
+  }
+}
+
+
+@media  (max-width: 340px) {
+  .nav-toggle{
+       left: -25px;
+  }
+}
