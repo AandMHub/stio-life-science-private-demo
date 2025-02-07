@@ -161,7 +161,7 @@ font-size: 30px;
       padding: 10px 10px 10px 10px;
       margin-top: 810px;
       margin-bottom: -169px;
-      margin-left: 115px;
+  margin-left: 165px;
       font-size: 18px;
     }
 
@@ -859,13 +859,6 @@ font-size: 20px;
 line-height: 2;
 }
 
-
-@media screen and (max-width: 536px) {
-.all_pragraph {
-  width: 100%;
-}
-}
-
 @font-face {
   font-family: 'MyFont1';
   src: url('../../../fonts/OpenSans-Regular.ttf');
@@ -898,6 +891,8 @@ header{
 
 .all_pragraph{
 font-family: open sans;
+  direction: rtl;
+  width: 76%;
 }
   .menu-icon {
     width: 40px;
