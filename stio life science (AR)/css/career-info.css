@@ -8,6 +8,7 @@ margin: auto;
 padding: 20px;
 border-radius: 5px;
 margin-top: 125px;
+      direction: rtl;
 }
 
 .container-info h1 {
@@ -49,7 +50,6 @@ margin-top: 10px;
 }
 
 .container-info input, textarea {
-width: 100%;
 padding: 10px;
 margin-top: 5px;
 border: 1px solid #ccc;
