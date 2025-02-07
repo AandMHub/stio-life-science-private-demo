@@ -1021,3 +1021,9 @@ header{
   margin-right: 38px;
 }
 }
+@media screen and (max-width: 465px) {
+.card_News{
+      right: 0;
+}
+
+}
