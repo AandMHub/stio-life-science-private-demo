@@ -1110,15 +1110,6 @@ transition: all 0.5s ease;
 }
 
 
-
-@media screen and (max-width: 460px) {
-  .h2-1 {
-    margin-top: -226.08px;
-    font-size: 23px;
-  }
-}
-
-
 @media screen and (max-width: 460px) {
   .text {
     font-size: 13px;
