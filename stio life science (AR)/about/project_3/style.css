@@ -1038,3 +1038,10 @@ header{
   margin-right: 38px;
 }
 }
+
+
+@media screen and (max-width: 400px) {
+.text{
+  margin-top: 50px;
+}
+}
