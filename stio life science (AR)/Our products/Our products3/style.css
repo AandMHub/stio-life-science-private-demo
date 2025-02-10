@@ -1700,7 +1700,9 @@ header{
 .submit-responsive {
   margin-right: 38px;
 }
-}  text-decoration: none;
+}
+
+.text-decoration{
   color: white;
   display: block ruby;
   text-align: center;
@@ -1720,10 +1722,8 @@ margin-left: -3px;
 
 .link2{
   text-decoration: none;
-Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
-
-
-  @media screen and (max-width: 418px) {
+}
+@media screen and (max-width: 418px) {
   .big_div{
                margin-left: -40px;
   }
@@ -1776,4 +1776,27 @@ Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use e
   .big_div{
                         margin-left: -83px;
   }
+}
+
+
+@media  (min-width: 1117px) {
+  .header .logo{
+  width: 160px;
+}
+.nav__menu {
+      font-size: 16px;
+}
+.nav__link{
+  color: #7a7a7a;
+}
+.res-nav{
+  margin-right: -40px;
+}
+.res-drop{
+  right: 62px;
+  margin-right: -115px;
+}
+}
+.for-big{
+  font-size: 20px;
 }

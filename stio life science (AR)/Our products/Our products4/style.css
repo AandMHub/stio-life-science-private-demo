@@ -1924,6 +1924,9 @@ header{
 
 @media screen and (max-width: 320px) {
   .big_div{
-                        margin-left: -83px;
-  }
+  margin-right: -109px;
+}
+}
+.for-big{
+  font-size: 20px;
 }
