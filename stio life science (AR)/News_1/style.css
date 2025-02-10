@@ -1027,3 +1027,25 @@ header{
 }
 
 }
+
+@media  (min-width: 1117px) {
+  .header .logo{
+  width: 160px;
+}
+.nav__menu {
+      font-size: 16px;
+}
+.nav__link{
+  color: #7a7a7a;
+}
+.res-nav{
+  margin-right: -40px;
+}
+.res-drop{
+  right: 54px;
+  margin-right: -104px;
+}
+}
+.for-big{
+  font-size: 20px;
+}
