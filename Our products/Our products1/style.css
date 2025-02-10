@@ -799,7 +799,7 @@
 
   .header .logo{
     margin-left: -53px;
-    width: 150px;
+    width: 90%;
     margin-top: 33px;
   }
   
@@ -1711,4 +1711,18 @@ header{
   .big_div{
                         margin-left: -83px;
   }
+}
+
+@media  (min-width: 1117px) {
+  .header .logo{
+  width: 160px;
+}
+.nav__menu {
+    margin-right: 485px;
+    width: 30%;
+      font-size: 19px;
+}
+.nav__link{
+  color: #7a7a7a;
+}
 }
