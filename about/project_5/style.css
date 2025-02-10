@@ -909,3 +909,17 @@ header{
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   padding-top: 10px;
 }
+
+@media  (min-width: 1117px) {
+  .header .logo{
+  width: 160px;
+}
+.nav__menu {
+    margin-right: 485px;
+    width: 30%;
+      font-size: 19px;
+}
+.nav__link{
+  color: #7a7a7a;
+}
+}
